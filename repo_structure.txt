@@ -1,0 +1,1609 @@
+Folder PATH listing for volume OS
+Volume serial number is AC0F-9A68
+C:.
+¦   repo_structure.txt
+¦   
++---c8fffff1-1993-4b30-a6b6-105c0a6a11b5-00-31wrdl1eb9yw0.kirk.replit.dev
+¦   ¦   @react-refresh.html
+¦   ¦   favicon.png
+¦   ¦   index.html
+¦   ¦   
+¦   +---@fs
+¦   ¦   +---home
+¦   ¦       +---runner
+¦   ¦           +---workspace
+¦   ¦               +---node_modules
+¦   ¦                   +---vite
+¦   ¦                       +---deps
+¦   ¦                       ¦       @radix-ui_react-avatar.js
+¦   ¦                       ¦       @radix-ui_react-dialog.js
+¦   ¦                       ¦       @radix-ui_react-label.js
+¦   ¦                       ¦       @radix-ui_react-progress.js
+¦   ¦                       ¦       @radix-ui_react-scroll-area.js
+¦   ¦                       ¦       @radix-ui_react-select.js
+¦   ¦                       ¦       @radix-ui_react-slider.js
+¦   ¦                       ¦       @radix-ui_react-slot.js
+¦   ¦                       ¦       @radix-ui_react-switch.js
+¦   ¦                       ¦       @radix-ui_react-tabs.js
+¦   ¦                       ¦       @radix-ui_react-toast.js
+¦   ¦                       ¦       @radix-ui_react-tooltip.js
+¦   ¦                       ¦       @tanstack_react-query.js
+¦   ¦                       ¦       chunk-3GL6P6IT.js
+¦   ¦                       ¦       chunk-4MPOGT7H.js
+¦   ¦                       ¦       chunk-6YS5WIFI.js
+¦   ¦                       ¦       chunk-6ZMM2PAV.js
+¦   ¦                       ¦       chunk-734E7IPH.js
+¦   ¦                       ¦       chunk-7VVCEXDX.js
+¦   ¦                       ¦       chunk-AB52NIBC.js
+¦   ¦                       ¦       chunk-BC3Y3PWH.js
+¦   ¦                       ¦       chunk-F5X6INBZ.js
+¦   ¦                       ¦       chunk-FXVZLN7E.js
+¦   ¦                       ¦       chunk-G3PMV62Z.js
+¦   ¦                       ¦       chunk-IK25HCTO.js
+¦   ¦                       ¦       chunk-IZJL53QL.js
+¦   ¦                       ¦       chunk-KMU3Z7QX.js
+¦   ¦                       ¦       chunk-KQFKG4AR.js
+¦   ¦                       ¦       chunk-PLLQENJE.js
+¦   ¦                       ¦       chunk-QANW4NWU.js
+¦   ¦                       ¦       chunk-QVF7CVT3.js
+¦   ¦                       ¦       chunk-QXSHV5DS.js
+¦   ¦                       ¦       chunk-U7P2NEEE.js
+¦   ¦                       ¦       chunk-UZQDXWZC.js
+¦   ¦                       ¦       chunk-V7IBYNJ5.js
+¦   ¦                       ¦       chunk-WGRQAFEQ.js
+¦   ¦                       ¦       chunk-XOIAAOBA.js
+¦   ¦                       ¦       chunk-YCYBKVJ3.js
+¦   ¦                       ¦       chunk-ZYUCOVU3.js
+¦   ¦                       ¦       class-variance-authority.js
+¦   ¦                       ¦       clsx.js
+¦   ¦                       ¦       framer-motion.js
+¦   ¦                       ¦       i18next-browser-languagedetector.js
+¦   ¦                       ¦       i18next.js
+¦   ¦                       ¦       lucide-react.js
+¦   ¦                       ¦       react-dom_client.js
+¦   ¦                       ¦       react-i18next.js
+¦   ¦                       ¦       react.js
+¦   ¦                       ¦       react_jsx-dev-runtime.js
+¦   ¦                       ¦       tailwind-merge.js
+¦   ¦                       ¦       wouter.js
+¦   ¦                       ¦       
+¦   ¦                       +---dist
+¦   ¦                           +---client
+¦   ¦                                   env.mjs
+¦   ¦                                   
+¦   +---@replit
+¦   ¦   +---vite-plugin-dev-banner
+¦   ¦           banner-script.js
+¦   ¦           
+¦   +---@vite
+¦   ¦       client.html
+¦   ¦       
+¦   +---api
+¦   ¦   ¦   market-intelligence.html
+¦   ¦   ¦   
+¦   ¦   +---auth
+¦   ¦   ¦       user.html
+¦   ¦   ¦       
+¦   ¦   +---dashboard
+¦   ¦           stats.html
+¦   ¦           
+¦   +---src
+¦       ¦   App.tsx
+¦       ¦   i18n.ts
+¦       ¦   index.css
+¦       ¦   main-afaf7e3c79c588.tsx
+¦       ¦   main.tsx
+¦       ¦   
+¦       +---components
+¦       ¦   ¦   activity-log.tsx
+¦       ¦   ¦   app-shell.tsx
+¦       ¦   ¦   auth-screen.tsx
+¦       ¦   ¦   chat-center.tsx
+¦       ¦   ¦   dashboard.tsx
+¦       ¦   ¦   marketplace.tsx
+¦       ¦   ¦   orders-tab.tsx
+¦       ¦   ¦   profile-page.tsx
+¦       ¦   ¦   role-selection-screen.tsx
+¦       ¦   ¦   
+¦       ¦   +---ui
+¦       ¦           avatar.tsx
+¦       ¦           badge.tsx
+¦       ¦           button.tsx
+¦       ¦           card.tsx
+¦       ¦           dialog.tsx
+¦       ¦           input.tsx
+¦       ¦           label.tsx
+¦       ¦           progress.tsx
+¦       ¦           scroll-area.tsx
+¦       ¦           select.tsx
+¦       ¦           slider.tsx
+¦       ¦           switch.tsx
+¦       ¦           table.tsx
+¦       ¦           tabs.tsx
+¦       ¦           textarea.tsx
+¦       ¦           toast.tsx
+¦       ¦           toaster.tsx
+¦       ¦           tooltip.tsx
+¦       ¦           
+¦       +---hooks
+¦       ¦       use-auth.ts
+¦       ¦       use-dashboard-stats.ts
+¦       ¦       use-market-intelligence.ts
+¦       ¦       use-marketplace.ts
+¦       ¦       use-messages.ts
+¦       ¦       use-orders.ts
+¦       ¦       use-toast.ts
+¦       ¦       
+¦       +---lib
+¦       ¦       queryClient.ts
+¦       ¦       utils.ts
+¦       ¦       
+¦       +---pages
+¦               admin.tsx
+¦               home.tsx
+¦               not-found.tsx
+¦               
++---Digital-Bazaar
+¦   ¦   .gitignore
+¦   ¦   .replit
+¦   ¦   components.json
+¦   ¦   drizzle.config.ts
+¦   ¦   firebase-debug.log
+¦   ¦   package-lock.json
+¦   ¦   package.json
+¦   ¦   postcss.config.js
+¦   ¦   replit.md
+¦   ¦   tsconfig.json
+¦   ¦   vite-plugin-meta-images.ts
+¦   ¦   vite.config.ts
+¦   ¦   
+¦   +---.git
+¦   ¦   ¦   COMMIT_EDITMSG
+¦   ¦   ¦   config
+¦   ¦   ¦   description
+¦   ¦   ¦   HEAD
+¦   ¦   ¦   index
+¦   ¦   ¦   ORIG_HEAD
+¦   ¦   ¦   
+¦   ¦   +---hooks
+¦   ¦   ¦       applypatch-msg.sample
+¦   ¦   ¦       commit-msg.sample
+¦   ¦   ¦       fsmonitor-watchman.sample
+¦   ¦   ¦       post-update.sample
+¦   ¦   ¦       pre-applypatch.sample
+¦   ¦   ¦       pre-commit.sample
+¦   ¦   ¦       pre-merge-commit.sample
+¦   ¦   ¦       pre-push.sample
+¦   ¦   ¦       pre-rebase.sample
+¦   ¦   ¦       pre-receive.sample
+¦   ¦   ¦       prepare-commit-msg.sample
+¦   ¦   ¦       push-to-checkout.sample
+¦   ¦   ¦       sendemail-validate.sample
+¦   ¦   ¦       update.sample
+¦   ¦   ¦       
+¦   ¦   +---info
+¦   ¦   ¦       exclude
+¦   ¦   ¦       
+¦   ¦   +---logs
+¦   ¦   ¦   ¦   HEAD
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---refs
+¦   ¦   ¦       +---heads
+¦   ¦   ¦       ¦       main
+¦   ¦   ¦       ¦       replit-agent
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---remotes
+¦   ¦   ¦           +---gitsafe-backup
+¦   ¦   ¦           ¦       main
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---origin
+¦   ¦   ¦                   main
+¦   ¦   ¦                   
+¦   ¦   +---objects
+¦   ¦   ¦   +---00
+¦   ¦   ¦   ¦       7d2bad5c00b876b44cf89ceb306dbf734c5fc6
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---01
+¦   ¦   ¦   ¦       338efe89dc1830190d7420106122f3b73793da
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---02
+¦   ¦   ¦   ¦       1fbffd74aa9843547bb74038f341838d80752e
+¦   ¦   ¦   ¦       4a68ceea67612bb8a36be8d34b36a355f48039
+¦   ¦   ¦   ¦       d56d00f3297039169ca4a12e6829bf37b8f342
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---04
+¦   ¦   ¦   ¦       1b4d3f59e5237ae176fe3de25e73047bf95695
+¦   ¦   ¦   ¦       eaaede7b3d70337a2ed3b08596fb9bc3702a80
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---05
+¦   ¦   ¦   ¦       4610fbdc9025445907b477c50d82c82e9fbec0
+¦   ¦   ¦   ¦       4b08000dffa8081e57cb81c92519fb4821082e
+¦   ¦   ¦   ¦       6354bf824bf1f06e9dbceeacad512ce21b03d1
+¦   ¦   ¦   ¦       d44fe3c35a3206d1efdb2e01b1bbc288bc4ca0
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---06
+¦   ¦   ¦   ¦       09979d525c33461116b2aafe968bb6d8d226c7
+¦   ¦   ¦   ¦       324c9c8995cbfa12cfc6e3010cd8a925372ada
+¦   ¦   ¦   ¦       e796eb9303bec4a5591d6444e80e840091235a
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---08
+¦   ¦   ¦   ¦       4758d5f9a610adf44badcaa3ab1bca6a3cac8d
+¦   ¦   ¦   ¦       499166c4a842c46a1a2c525fb27f107d0f589d
+¦   ¦   ¦   ¦       8509c9d10bb3633422d73bf3b3a80c7feb5f17
+¦   ¦   ¦   ¦       a0d01d5386050355006bd18c66ea23220bb36a
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---09
+¦   ¦   ¦   ¦       51ea62de266277d33136dbb685f754fb040a57
+¦   ¦   ¦   ¦       789b6e6c30de80ed4d1896106fe428478eda85
+¦   ¦   ¦   ¦       df02e7674a1e07b2afd4f49eb2ca4e52ec8f51
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---0a
+¦   ¦   ¦   ¦       20ab59c85eedda901f81ff93a3b0af64181ee7
+¦   ¦   ¦   ¦       276fcb1d7623b0d57fd649fddfb043b535ea62
+¦   ¦   ¦   ¦       701559010b6925d5508944d01c790454cdd708
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---0b
+¦   ¦   ¦   ¦       1f7cd139de4d0a8a23b0ee90d48e9be8320140
+¦   ¦   ¦   ¦       4d49155242d0eb30b22b0b3f355161e139fc3c
+¦   ¦   ¦   ¦       865ea8df2948b59bf6f5ffa87162a2da15a323
+¦   ¦   ¦   ¦       dd0d32ea1f8412320d13b4c7e2139dd10d159d
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---0c
+¦   ¦   ¦   ¦       682e04f1ad286482d5ea2238f08fa171f8c926
+¦   ¦   ¦   ¦       8dd3d9d3b299fdc7f7e574c38c8df612622cf2
+¦   ¦   ¦   ¦       d4b2c03d306c38836d43c7f3dc2cb2547c64a7
+¦   ¦   ¦   ¦       db60364de50b3dd9a2ef4eeeb7f71093d46222
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---0d
+¦   ¦   ¦   ¦       1d8dec69d4db50e06e67e77ad33cb85fc7081f
+¦   ¦   ¦   ¦       2ac765877fc73ed663e94dce3b4580539a2613
+¦   ¦   ¦   ¦       757ec5a2a96c8714ce552ecef2f2c6d1212a66
+¦   ¦   ¦   ¦       7ff7a5d5ca35ede0491f4142a693b0fea2bfa5
+¦   ¦   ¦   ¦       a68e80f4618e921a23b1b4167eb7b84ab4c82e
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---0e
+¦   ¦   ¦   ¦       3dc854db66d791547adc3c095b504d6eb4aa73
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---10
+¦   ¦   ¦   ¦       4ec94abdf29f349de68a5cbc68535761e63525
+¦   ¦   ¦   ¦       697101316f1c3f84fc93e524fbc1441c3a41b6
+¦   ¦   ¦   ¦       a1e7359cd509b1402b33f30bd1e71a1de081b5
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---11
+¦   ¦   ¦   ¦       487435ea0daf4ff7a190473de6a4b8d867294d
+¦   ¦   ¦   ¦       87589ebbbc3d0c721c0c2fc4fc402c9b4e9d6a
+¦   ¦   ¦   ¦       9dcf285abbfa257afea59e0ef341c20d46ddf6
+¦   ¦   ¦   ¦       dc27f9c121c6a8ed0ae4a1daf94c5eb16795ea
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---12
+¦   ¦   ¦   ¦       33eff82050abcd053131fd15ab80f87ecc15c6
+¦   ¦   ¦   ¦       3e55810a64af60c413ce837bdc6982d779b212
+¦   ¦   ¦   ¦       49f4b37d88eeeddbf801ca64250a5e33111779
+¦   ¦   ¦   ¦       5a64fef13d31ef88c4af3576350e8d30aa8236
+¦   ¦   ¦   ¦       6e0b39e3f27f45a0bf8204065698ecb6b7cab6
+¦   ¦   ¦   ¦       803351f408826bad50ff668b6aafe5f64d4930
+¦   ¦   ¦   ¦       8a0c7d89ad023ebea19578a4d0a7feb206d0e3
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---13
+¦   ¦   ¦   ¦       17953eb4947a2fb171737ae02c4b81a67e2d13
+¦   ¦   ¦   ¦       212a24b00e08b7a343e5b0a858b870971d2ac0
+¦   ¦   ¦   ¦       95db6008457eaf398d111fb040f70a534e799d
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---14
+¦   ¦   ¦   ¦       c16263b842d7aad1dda99f64e25617baaaf46a
+¦   ¦   ¦   ¦       dc793ffd0e46d2fbf28ea6ad6dea8a6f361aac
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---15
+¦   ¦   ¦   ¦       17e4e5ce2046ad29f97e5529287d7f7e685146
+¦   ¦   ¦   ¦       39a02ac7542be9c7e1bc5b786bba0bdf772a6b
+¦   ¦   ¦   ¦       64c9a0d71ea2576d5aeb434fffb18122f61628
+¦   ¦   ¦   ¦       9ed2af8e3200297468d0756c0a7248e24c777a
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---16
+¦   ¦   ¦   ¦       4a71944f6555260655f2973a89dc7f70a74a72
+¦   ¦   ¦   ¦       a610fae24877f9a871e58293a0476120e3a07b
+¦   ¦   ¦   ¦       eb95d1cca6cdc61889bdf0d9206ad0dfcec427
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---18
+¦   ¦   ¦   ¦       1437d6bc9a4b262ccc7941895763188ce8959f
+¦   ¦   ¦   ¦       54c6d8e7e4301135d5784c31b78fbf09b30a4d
+¦   ¦   ¦   ¦       5c894c8fec6746d73cdf4c80793346f95a8d8e
+¦   ¦   ¦   ¦       a1a9403c28feb4c464c4ffb5134627f9633e4f
+¦   ¦   ¦   ¦       b74a5229c61c07df1c9fe35fe83f41efd14dc5
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---19
+¦   ¦   ¦   ¦       662b32e40e09ca8f192a539740e830e1f34673
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---1a
+¦   ¦   ¦   ¦       22f8834477ce98ad7b9da9162ada864f28f11d
+¦   ¦   ¦   ¦       b4bc75b8ec7e31ec4c2fba65ac8edfad560e0d
+¦   ¦   ¦   ¦       ba98c0fd584d833d3794d521f95cb982e7a684
+¦   ¦   ¦   ¦       bd87e0c787c6ed884a5257f779eace9bb25c2a
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---1b
+¦   ¦   ¦   ¦       28ed4e602a5c64392c12950df40d8e24fdf6a7
+¦   ¦   ¦   ¦       30df156c7ea3bfb39e227aeb3023cbb67c01e6
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---1c
+¦   ¦   ¦   ¦       876bbeecabe59b684719afe58e684f34cdecbf
+¦   ¦   ¦   ¦       eaff61bf036609c7fd0c3352b36817223c5455
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---1d
+¦   ¦   ¦   ¦       2eecc1ab67da78f4e745d1ba4842462e051948
+¦   ¦   ¦   ¦       5425f6ac45ca557ae7e05d781b1bacf7c6c6dd
+¦   ¦   ¦   ¦       544765e4294b8bd3f4b70f2c440f481ac28f47
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---1e
+¦   ¦   ¦   ¦       d0425bbe144c3cd39d030690e1087b54d88cfa
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---1f
+¦   ¦   ¦   ¦       e22e6f0be2750d1b5ec3efc7346fef4612b2e3
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---20
+¦   ¦   ¦   ¦       8b29bfd1b40c303aaa83e65c0cbf69add8f9de
+¦   ¦   ¦   ¦       9a124b3a8ebc4a9ef56f0cf1aac27a5c4030da
+¦   ¦   ¦   ¦       9fb9173e39ab3d3a26a325b2469267550e16c8
+¦   ¦   ¦   ¦       c0866ad2412f7256e480e9aa527df2276dabe1
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---21
+¦   ¦   ¦   ¦       040e645ecc6336f17efec14d8fa54daa582c08
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---22
+¦   ¦   ¦   ¦       77a8d5c0f5710a850cd6e3e5e3babdcadbdf26
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---23
+¦   ¦   ¦   ¦       23825f05df362be38b2f3d0d4a9d6e76f5ca20
+¦   ¦   ¦   ¦       5667c4b0f4fdae046cf8226c2f81305bf9cabd
+¦   ¦   ¦   ¦       70d0e5a44704b57d908cdd927fc774b13b8f41
+¦   ¦   ¦   ¦       9e55c23f54a5895ab23e12aba17dad5c2f219f
+¦   ¦   ¦   ¦       dc1c1bb3a575bdb557e5fce9348f3815458178
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---24
+¦   ¦   ¦   ¦       924829753d0fd989a892dc1b9f92ff0c07a5e7
+¦   ¦   ¦   ¦       a1f87519a032d66bdbc9b98c26aa9e7ae72faf
+¦   ¦   ¦   ¦       b8083dcac5f9ee46f0bac4d072f390751b6774
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---25
+¦   ¦   ¦   ¦       2f073cbf640f1bc69f51e2adac15557761c6df
+¦   ¦   ¦   ¦       3ba7f7903c882508f365666b3788d5d942ae45
+¦   ¦   ¦   ¦       68e4ad0a4627b1d6f9c946039a8ac199648c2d
+¦   ¦   ¦   ¦       9061b0edea74e7d0a17f874104b1de2c105786
+¦   ¦   ¦   ¦       f78488f2928092069974b0c42bc121055891ad
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---27
+¦   ¦   ¦   ¦       2cb721eb48b7a5833ccd51f940a8830d85b64e
+¦   ¦   ¦   ¦       5e2dc5bd51699a588d9259062dbd42d7ee61e1
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---28
+¦   ¦   ¦   ¦       e19183f4d9dfbb73c82928190556b69575eb2b
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---29
+¦   ¦   ¦   ¦       ee7ca4b846b764e06620bde6b13cb2f2219e18
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---2a
+¦   ¦   ¦   ¦       66523b2da45044f22750f1209d47f87f706253
+¦   ¦   ¦   ¦       6c1cf12c939d12164ed2c7151636030e387d2c
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---2b
+¦   ¦   ¦   ¦       0fe1dfef3b17850bbac040665f514a8ffd0f15
+¦   ¦   ¦   ¦       8ec044efd0eec99123d35b28c9c0ea3063a72c
+¦   ¦   ¦   ¦       a402eece054c429e896a385be77f996fece159
+¦   ¦   ¦   ¦       b4efe05d483f5ad13f20a43f279e31fd9a6b95
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---2c
+¦   ¦   ¦   ¦       14125ac48b874740770da80d9e424daf1db58b
+¦   ¦   ¦   ¦       2cc3246d903db5b98356b110e431b2790d6fe7
+¦   ¦   ¦   ¦       c1617519717b5714b113fa4aa22401509f4680
+¦   ¦   ¦   ¦       c62a9900049d8b0cf06e5b4dc75150764031df
+¦   ¦   ¦   ¦       cc5cad016342b009e4405ea44409a8e190e383
+¦   ¦   ¦   ¦       ecd9104b27be82d238aa2f1cbb351e05446af7
+¦   ¦   ¦   ¦       fa2f04eb87f2e44ed3e2d3174a408b0c87e962
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---2d
+¦   ¦   ¦   ¦       0289b0647bdad5b648bab5a2bb308c376785cc
+¦   ¦   ¦   ¦       5d3402e8a0a681c4aed0cf47ea0cb74d99c77f
+¦   ¦   ¦   ¦       a83deca371b0c9f4971e7b864da813f3b643b2
+¦   ¦   ¦   ¦       ab0fb2ac13e1030141cc87c6892983cbf18556
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---2e
+¦   ¦   ¦   ¦       035ec9998d988d4a324f31b671b84a619fa650
+¦   ¦   ¦   ¦       066a1489834668e4cc0087bdefb508ad755702
+¦   ¦   ¦   ¦       357861281700d9fc036a13d55caf666ee31cfb
+¦   ¦   ¦   ¦       7af2b7f1a6f391da1631d93968a9d487ba977d
+¦   ¦   ¦   ¦       9b89f6e75d7f0e783c8dd00e2050409b8816b8
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---2f
+¦   ¦   ¦   ¦       0d9d7c39c08aadfe6ab382f447da199273fbd2
+¦   ¦   ¦   ¦       30272161cddff9734a1c00c488650fdb0a52d5
+¦   ¦   ¦   ¦       d8319650e577ebe8985be59ea3f2b1e9d7118f
+¦   ¦   ¦   ¦       d93de5ba08dc867c0de6bcdf86eef1201b92af
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---30
+¦   ¦   ¦   ¦       3b19ee68560b2f8fa190006c6d2645e815b4d0
+¦   ¦   ¦   ¦       6d74aec6e5024f2c36606fe4324e15af5866d3
+¦   ¦   ¦   ¦       e4e38a15a8a83cbcd9e09563a033e2f4015070
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---31
+¦   ¦   ¦   ¦       67db1531fddc291c925ad324b8b8a920f62556
+¦   ¦   ¦   ¦       bdadc8c12cd68e26a0027c40f4aba924e2ebcb
+¦   ¦   ¦   ¦       dc56a1ba30e072d5f024c60624c17d6734a1a8
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---33
+¦   ¦   ¦   ¦       b6bc11fd3eb4a080ea17c5394af35b6a0f8fda
+¦   ¦   ¦   ¦       c7ce8307da5f63241a1ed809283365ddaa1801
+¦   ¦   ¦   ¦       d3388062586c6cb00417f24e8472aabc551890
+¦   ¦   ¦   ¦       f5ed87fd78f66a472915454dbf2dbd9d5758d3
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---34
+¦   ¦   ¦   ¦       3ec670e796ff214a23110d9f55f433091abc04
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---35
+¦   ¦   ¦   ¦       31b2a62486a2f3fe6b05833b942d9ee8297cff
+¦   ¦   ¦   ¦       9dde1949929aac1a54d210fb3fd5d2fb32d447
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---36
+¦   ¦   ¦   ¦       2060591d44aa6006ec48662be109efe99e132e
+¦   ¦   ¦   ¦       6b819bfae42c20a40d92a62509fef0829559d1
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---37
+¦   ¦   ¦   ¦       05fe2a6380d29c0515a482789fb2fc7dc005fc
+¦   ¦   ¦   ¦       dca20af42c08430f9340642911828ac13df306
+¦   ¦   ¦   ¦       edf69d02ad58ace9e1a0d8290321f84974b2d3
+¦   ¦   ¦   ¦       fae42b25ff319bc44b7f059fc54585b56bcaf7
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---38
+¦   ¦   ¦   ¦       8ab50ca58804fddf6f02dc5d575e435c751f5f
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---39
+¦   ¦   ¦   ¦       385369055964ce77c8d9a1e9757cb83d28bbad
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---3a
+¦   ¦   ¦   ¦       01962fd7f462377531b5549991761ed5ebf489
+¦   ¦   ¦   ¦       36e09c119137dac005866fb08fb768a145db00
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---3b
+¦   ¦   ¦   ¦       55ea9cb95aa60582ff4f47be58f8ff9947423b
+¦   ¦   ¦   ¦       5d58bbdac33991670c47651e6d26ab7947cf93
+¦   ¦   ¦   ¦       c3677323a9daf9d49cd129e4255c154017bff8
+¦   ¦   ¦   ¦       cb1fd939fd52184a273daf28ebc5d2d5501e68
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---3c
+¦   ¦   ¦   ¦       6c9c29a4e3429e8d23ea6fcc01325d434be013
+¦   ¦   ¦   ¦       a21f89ed09fe8a9726abe78272d0c9e8db0cef
+¦   ¦   ¦   ¦       bfa54aba8fbaedff6162917756f9e47142c041
+¦   ¦   ¦   ¦       f02aea28832b112749a09e52485e1dee05de9c
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---3d
+¦   ¦   ¦   ¦       3dc18d91f092e34c77b2ed9cb5c7caacb8888f
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---3e
+¦   ¦   ¦   ¦       3687b079cdf7ab0700c249f243e6207ea92154
+¦   ¦   ¦   ¦       e01dbf7725391d54c4456317d3b201af74ecaf
+¦   ¦   ¦   ¦       f63c8b13eb5a8ce07d3431b1f588b5888ef20b
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---3f
+¦   ¦   ¦   ¦       03665878d609428688f5736ab2300297115e5f
+¦   ¦   ¦   ¦       326ac8a3736dadbd404ecb921bdf7b159d275f
+¦   ¦   ¦   ¦       901db71c4fda130520986f27b8eaadbcf89b31
+¦   ¦   ¦   ¦       f7cb8ba7313ffd369a9ef5da777240d263ac47
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---40
+¦   ¦   ¦   ¦       2230e28602fc20e8c58e7179df9dd63378b627
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---41
+¦   ¦   ¦   ¦       362f6f40769bd800e4b1e77dfcc0ca61300636
+¦   ¦   ¦   ¦       412b04fbba4cf232ce5c276150911368425cd3
+¦   ¦   ¦   ¦       5e2b06d40414457bf3c83ba6cf98cce1d6efaf
+¦   ¦   ¦   ¦       634cf8eca6059a371f5bb60223481c8cae225d
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---42
+¦   ¦   ¦   ¦       01b6d8a27d01b910f99ac41a58efe314390d18
+¦   ¦   ¦   ¦       105fbe909ea380b9dd06f1468a5b0f3e391e96
+¦   ¦   ¦   ¦       650040505d74f2af9e1b840e72b0e1e21151c5
+¦   ¦   ¦   ¦       d69e7ce959325c746005d2f509a70edee97d67
+¦   ¦   ¦   ¦       dbba7fe6dbd9b8ff6b4acc3cbbce102c700793
+¦   ¦   ¦   ¦       f6f3984584f1ac2f128ae688d7182b6c2192ed
+¦   ¦   ¦   ¦       fa5d245036ce40282f14a821211e176a38377d
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---43
+¦   ¦   ¦   ¦       076f0206696d4e534aca321b3dba6b49879be2
+¦   ¦   ¦   ¦       839868abb6bfb8cb50712bb2f811e0ad66f1ba
+¦   ¦   ¦   ¦       9fed4298b2badd1921a3af4af341903d1a1d7a
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---44
+¦   ¦   ¦   ¦       0aa7a0d20f9183f3a2574adfe453b9ab70716a
+¦   ¦   ¦   ¦       3a080804f5e810f47bb564b330f7c140e844d9
+¦   ¦   ¦   ¦       8b8b2574598d25dc6c10fe7195410545bfe9b4
+¦   ¦   ¦   ¦       93a4cd8b7ad313958dad7f4cd1474c6b04d30b
+¦   ¦   ¦   ¦       af6a661482c564230754df8e0595d8afe3bde1
+¦   ¦   ¦   ¦       d8ba842d739468527fd004503f4546cc152576
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---45
+¦   ¦   ¦   ¦       2c4c7823c3b1363c2a2b45c8d7bb2471cec346
+¦   ¦   ¦   ¦       2f4d9f0dde88611113632c1d759d60155fe4d3
+¦   ¦   ¦   ¦       5c23b6cd5adcb0278792568cdddf084a4a37c9
+¦   ¦   ¦   ¦       6e18ecab67afd29e517ac88dff990fbb8d8c05
+¦   ¦   ¦   ¦       9bbaa1d073af6b6ed7da13bf83e163e393483e
+¦   ¦   ¦   ¦       9c9f4c68b35d6d17656c5ffae78373019be4df
+¦   ¦   ¦   ¦       b7f5ce9838566f9a8cbd30267487435c265a69
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---47
+¦   ¦   ¦   ¦       883355d6a124fa609d2b5fe81d0a283b3964cc
+¦   ¦   ¦   ¦       de529d05f520422c0a7f404d271bb2bda0a3ab
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---48
+¦   ¦   ¦   ¦       1c36572e5b48f671b147e0fad6ed4308eee89d
+¦   ¦   ¦   ¦       27a1b73e049ed967744485c52eb29cf0a6234a
+¦   ¦   ¦   ¦       b4aee606a99dc4eccf5223916ce873f7475b25
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---49
+¦   ¦   ¦   ¦       72356bb0f94fdd98a6c888a40d6b231d350f85
+¦   ¦   ¦   ¦       e1889277d2a3ccd2375cc56d60e42573bad130
+¦   ¦   ¦   ¦       eebbc064ac871464e3afc872bd78ab54f473aa
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---4b
+¦   ¦   ¦   ¦       6864dc67996cbe35a5a8759b2b38f0021eace8
+¦   ¦   ¦   ¦       a6e67e3e0e1b60002f80bb8f23ef3b154c2d06
+¦   ¦   ¦   ¦       aaba610fe324ed4952bf996a58d047de7f1983
+¦   ¦   ¦   ¦       b8315ddc76c3005e51c32251a36a23d1ad691d
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---4c
+¦   ¦   ¦   ¦       2e67076a2f3c3ab6beb19fb850c81a19582a36
+¦   ¦   ¦   ¦       868b965dee7dca208d21ac236eef93944f9afb
+¦   ¦   ¦   ¦       87b358fc23c4e01ff1b1f0320ca3f6ff036562
+¦   ¦   ¦   ¦       988e5178b5b01189ff599cff8f0798655a9eee
+¦   ¦   ¦   ¦       d7b4cb3770a444d70ce72acabcb58e4e3ab18a
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---4d
+¦   ¦   ¦   ¦       1344a5b66ceab7ea40427d755c3dd4783191f6
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---4f
+¦   ¦   ¦   ¦       23da5bcc067888262d79ccdd16d317cd8226c0
+¦   ¦   ¦   ¦       c3b473e6f51afa972f840fb0f4476f8663c256
+¦   ¦   ¦   ¦       cf27bc63ff7e3f77e2316b99765c9556c1105e
+¦   ¦   ¦   ¦       e6d532f85683daedb53c9be61bc9b1c80f8694
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---50
+¦   ¦   ¦   ¦       562c85f348b8eb60494c1abef02cd881205b4f
+¦   ¦   ¦   ¦       728fe6c3336751495ce256c76dc352f1261b74
+¦   ¦   ¦   ¦       b7f6cb9b9d9fb5e47d768a5307b60de57418cc
+¦   ¦   ¦   ¦       cddc076f844182156d30ad75ac89d8904334b2
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---51
+¦   ¦   ¦   ¦       0d21288b7b5c821dae25101c48883d49237238
+¦   ¦   ¦   ¦       e507ba9d08bcdbb1fb630498f1cbdf2bf50093
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---52
+¦   ¦   ¦   ¦       05232d1a61991a090ced5469e66e709e3f39f6
+¦   ¦   ¦   ¦       1231c7550e85dae8f3ebae055100436050a7e6
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---53
+¦   ¦   ¦   ¦       1ff28125dbb71edc5b59203bc6e3cd63945962
+¦   ¦   ¦   ¦       4182176bf87f9308355514adc884d2b69750a5
+¦   ¦   ¦   ¦       8185b51d880535aa371bdd45ffca7d0bbdc90a
+¦   ¦   ¦   ¦       dc8d4b3edcf9fceafb305a006be0aabad89876
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---54
+¦   ¦   ¦   ¦       90e2a4c4d1a97171004d749e617a649dc025b9
+¦   ¦   ¦   ¦       e483e57f6345de6e7e3680cb051f506cf45f05
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---55
+¦   ¦   ¦   ¦       4b99bdd9b191b5d498404b92a53725b088c707
+¦   ¦   ¦   ¦       a2b21a532f2dc5c69f9a10865f58225f620c5e
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---56
+¦   ¦   ¦   ¦       6430d3fa38a0022a152bb7f1e73e37216a2e3c
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---57
+¦   ¦   ¦   ¦       24a95ba63f680e3e82ff2013f7be6f0b51acf8
+¦   ¦   ¦   ¦       42a0ded4b8dd4e5b37dc96359e476ce5e73750
+¦   ¦   ¦   ¦       e0acba18cd312fc802ef1841118d8c04d3324d
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---58
+¦   ¦   ¦   ¦       434e7455df3e6bded117dd6e0e4bcdfb62c8c2
+¦   ¦   ¦   ¦       fae4b5dbf74220354c27af58f41205ef33dcb8
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---59
+¦   ¦   ¦   ¦       541694f44ba109d411c29c409ea2b8d3551662
+¦   ¦   ¦   ¦       9bd9dcc197d812214bd8ea9306a16a794c74c9
+¦   ¦   ¦   ¦       d288b3738aac18339bbb7acb85a6338f04bfd4
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---5a
+¦   ¦   ¦   ¦       20503b547ea0e4e467d63fe1ae78e4171afb52
+¦   ¦   ¦   ¦       fd41d142c95c74069ebb5460117e74ead3b9df
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---5b
+¦   ¦   ¦   ¦       1022e9ac6d8fce76481a1ab4b896cc9e353f4f
+¦   ¦   ¦   ¦       2cd3ac77247878c389121292e807d78b1df5f6
+¦   ¦   ¦   ¦       a8d8bad9b166d61bbacf2ab9fe8e89d2c1a267
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---5c
+¦   ¦   ¦   ¦       6e95692bb6bcceaf0af12c53d265367caf592c
+¦   ¦   ¦   ¦       d578e390dd2b6d4c47f3b3bb6e3ebf95f832c2
+¦   ¦   ¦   ¦       ebb00ee796e53482b5847b1b30623e303adc7b
+¦   ¦   ¦   ¦       ecc5fd555edfa7dc80f206486e29989c0fe781
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---5d
+¦   ¦   ¦   ¦       45792e9ffea44a83b3d5d26b22fc476dd67641
+¦   ¦   ¦   ¦       73dfd9e40d6edf17ca7ab349d38410ed16e428
+¦   ¦   ¦   ¦       fb42559d2de8a529968df7b41379bca7344625
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---5e
+¦   ¦   ¦   ¦       225c0ae4838eff3883a6df6ba024d91acc9c6f
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---60
+¦   ¦   ¦   ¦       4625f17453eb5b9d4935686136ed92296798ba
+¦   ¦   ¦   ¦       d539469357a1e1a2f0a1594e707f9c21c149f5
+¦   ¦   ¦   ¦       e6c96f72f0350d08b47e4730cab8f3975dc853
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---61
+¦   ¦   ¦   ¦       6f4cb83818a70ad98dc7ee4f4ced819277cc7f
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---62
+¦   ¦   ¦   ¦       5caff34364d36bfd33beef352fb38c93cba110
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---63
+¦   ¦   ¦   ¦       344918dd3bed83e77257b4e733eeda9987f7e0
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---64
+¦   ¦   ¦   ¦       1839ababe93aa086f64af10e3f1e531cfd7970
+¦   ¦   ¦   ¦       5ff61f7249638b50358347408ef7f4d08f90ad
+¦   ¦   ¦   ¦       a404773905951b16754e59036a0f3fa0e28bf9
+¦   ¦   ¦   ¦       fbef85935467d6788f7e5ae1bcde16012edf0a
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---65
+¦   ¦   ¦   ¦       190ce5889bd90ea8fbce26f62ee1ad978da938
+¦   ¦   ¦   ¦       33bb27cb2c57928dd288d202c0975f073a1d7d
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---66
+¦   ¦   ¦   ¦       5413f1f16339cfd83500fa99325d55ef5722c3
+¦   ¦   ¦   ¦       e6e3ad552d26efac1aea7dcf45d89cdfae46fd
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---67
+¦   ¦   ¦   ¦       b5725282556ee0f338c3273d488d43733f9dfc
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---68
+¦   ¦   ¦   ¦       4ca2d78d09ce54937df9049f564d51b0f6050d
+¦   ¦   ¦   ¦       50fc863c64e8dd7a24d19f3d4c03726e8619c2
+¦   ¦   ¦   ¦       79e7ebaf99a5a65bd70531ed1268ca9ed86ff2
+¦   ¦   ¦   ¦       e9d41c43aae32ee5314e0006e01345589570f4
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---69
+¦   ¦   ¦   ¦       19168b87c646d3b27fd66d68cdd7e391757583
+¦   ¦   ¦   ¦       5135d71bc65eca3632b9be02dddb8e9eecf907
+¦   ¦   ¦   ¦       6e0d2b94fbc09e5bf2378678cfe86625c2f15c
+¦   ¦   ¦   ¦       b64fb2455114c3eeda2d18741af0027b3c5e89
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---6a
+¦   ¦   ¦   ¦       2adee5708a4137394f9bba2faddbf59e772e0a
+¦   ¦   ¦   ¦       46732ddef38810f2cfd2456d2ad610d3162883
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---6b
+¦   ¦   ¦   ¦       03968345351526057a8bbc89d399b11808e165
+¦   ¦   ¦   ¦       04609b48f1f836d490d326cad0ed80d587a827
+¦   ¦   ¦   ¦       a1bdfb494d3186da70dd99846498111b99693c
+¦   ¦   ¦   ¦       a3fd9df0f9d8e4f8ad2d3a6fd4486114308e71
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---6c
+¦   ¦   ¦   ¦       27e9055fbe7234a10c94526d3d0c62a031bfed
+¦   ¦   ¦   ¦       384ebc0ab2d9824d5e47450bc4a7d19ed8374f
+¦   ¦   ¦   ¦       4291d4b6b8434ad84dfd8d84c8a34d9b87c188
+¦   ¦   ¦   ¦       5ebf431471c7994eb59317621ec3de9b35ac26
+¦   ¦   ¦   ¦       67edff67a48c6ac1c46f25a6d468dd461e66cb
+¦   ¦   ¦   ¦       e1f8f684ddbd3fc4c7e2c8b919fa3407d9ff40
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---6d
+¦   ¦   ¦   ¦       513b4979778bf45c8daf9f06682bc6c2568c94
+¦   ¦   ¦   ¦       53804d5085479a198b55c8c513be04b70eee9e
+¦   ¦   ¦   ¦       7f12265ba0338704f013930ce4d52c56527dd1
+¦   ¦   ¦   ¦       9d465e6d9e584acdc9738d1fbaba76855fa109
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---6e
+¦   ¦   ¦   ¦       1708c2efed36bc0e026e204cabbbe735471a57
+¦   ¦   ¦   ¦       2bc92c232ac1d38d92ab4bdb90e91afd1248c6
+¦   ¦   ¦   ¦       62c3de81f05444371044de936113e80793ad07
+¦   ¦   ¦   ¦       637f7dc67daa0b2ce4f440e4bbdb3f14ce3c03
+¦   ¦   ¦   ¦       aac95528cb1aedb6bbe900ced43c8b3c7b96d3
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---70
+¦   ¦   ¦   ¦       0198ef0de4ce2bcec82e3a73ad24d8b614ee0f
+¦   ¦   ¦   ¦       fec6038bac3830a3110294f26181a7d78bbe4e
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---71
+¦   ¦   ¦   ¦       667632e77bf4265ab740e906f785fee806eec2
+¦   ¦   ¦   ¦       8e88380f1137c0ae6f6eaf461376e500f265d1
+¦   ¦   ¦   ¦       b68035b45ea36af63c0cea8b910f655165a725
+¦   ¦   ¦   ¦       de300a717a2ac2a268958549ae2bd75895226d
+¦   ¦   ¦   ¦       eb8341b94b7e390297ca1519c1259e2ddae66f
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---72
+¦   ¦   ¦   ¦       05bf19eb8de63e9e463ecba057b34002330e92
+¦   ¦   ¦   ¦       4b6906120fdac5df9be494090e40e37cdd123e
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---73
+¦   ¦   ¦   ¦       ac9106f7e45a846d0c68db631a14c497d6db64
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---75
+¦   ¦   ¦   ¦       75424c9faa2c919a07c9d252c9c56494a39c35
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---76
+¦   ¦   ¦   ¦       29ffe6846ac83c5444a26014984dfbcb840f69
+¦   ¦   ¦   ¦       e69726f3b98b95cb707f07c64221029e5a34a8
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---78
+¦   ¦   ¦   ¦       549bc57118954026611876cc4be35fedd8cbda
+¦   ¦   ¦   ¦       66a75e7c997dfc828507dba1ccdca7c744255a
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---79
+¦   ¦   ¦   ¦       3b233ba7bd7e635421173e3a4a91a3abdae481
+¦   ¦   ¦   ¦       a76f923348c7b9815fa9215125b2178ecc02e1
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---7a
+¦   ¦   ¦   ¦       81631b0cbc4a6c2310b7a6d4b688fa56939cf5
+¦   ¦   ¦   ¦       a8dba376de2f01920f7c9d3033827f187a5d0d
+¦   ¦   ¦   ¦       b8fb3ff0b806d11e4fd73e03b522f14586f636
+¦   ¦   ¦   ¦       f49dd8412871272e76d39f1a9cff549d5e58f8
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---7b
+¦   ¦   ¦   ¦       e55a257e0c2d06425742f33e54bdc331042520
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---7c
+¦   ¦   ¦   ¦       021447012c7621b6168b725e1c70f7911e0cbe
+¦   ¦   ¦   ¦       2468f7b131e011db99630af1e0f4a618efd6f7
+¦   ¦   ¦   ¦       2d9f946702acd4664d49e988eb894b6a15e750
+¦   ¦   ¦   ¦       3d67f7a4b943e6bd905afcb621d9d267c0ff30
+¦   ¦   ¦   ¦       924eb0f76185338552b448eda481f7cf420d05
+¦   ¦   ¦   ¦       b7e0d43f2ce1d8025161746c4a5a8030dae748
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---7d
+¦   ¦   ¦   ¦       ab93fb7f2b9f052a1b27cb730e15eb438adf76
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---7e
+¦   ¦   ¦   ¦       d817a9b73676e567c74e6afbf6a48ff83d7ef1
+¦   ¦   ¦   ¦       f26e98fb20a63c8500115aaebc294c0694c00c
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---7f
+¦   ¦   ¦   ¦       93820e5c7a538217d507582e86abc2643b0a6a
+¦   ¦   ¦   ¦       c867a18985660b49b7cac42e332149e1a0eac8
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---80
+¦   ¦   ¦   ¦       5ce660afb54300d5bc582c83ec180cc9ce9d65
+¦   ¦   ¦   ¦       7ee851a5370e86df5b16d42cf793f87fd75763
+¦   ¦   ¦   ¦       abcca2ef8e06ff5222929fef660aa07382a04c
+¦   ¦   ¦   ¦       f1bf50f33dfb0dfdd2523014d42a78df1575a8
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---81
+¦   ¦   ¦   ¦       2c8f79d0c12422446c1e923339a668465a8e76
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---82
+¦   ¦   ¦   ¦       0e511349cd7ef6245e3f8be2f6e0a20fb76235
+¦   ¦   ¦   ¦       13d23abff0b87993bcac640b6c5b9a1fd63b3a
+¦   ¦   ¦   ¦       79abb6d6e2cb13ca8d06813ff5550dd0edfca1
+¦   ¦   ¦   ¦       937e0e37212a1e6bc1f0211ffb2b3d0df3cbf1
+¦   ¦   ¦   ¦       9d0db1af29516cdcb4f2b27d1bb5dc0135b63a
+¦   ¦   ¦   ¦       a0bed055aebe265839e057c162b7df8ee1ed03
+¦   ¦   ¦   ¦       a4212f8e30d0f5dc8d8e35a3e8ede11a3eb09f
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---83
+¦   ¦   ¦   ¦       1969c99dcf63c86d64c0938a0cf5013692607e
+¦   ¦   ¦   ¦       3a18fad4340336dfb769b5176a52852b372d9b
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---84
+¦   ¦   ¦   ¦       1b72cfb40005cb1f47428e2cf65f8b1a5378a4
+¦   ¦   ¦   ¦       4f8eb143045620af6d7c7c03cece9ff9c651d4
+¦   ¦   ¦   ¦       d18e46ad837529f9454d688d75abc01ede687c
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---85
+¦   ¦   ¦   ¦       d83beab3224580318b1dd85f93e9294fae32c0
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---86
+¦   ¦   ¦   ¦       7e8616d798537da0d1e794c6510f2ddb45a6e9
+¦   ¦   ¦   ¦       ebe30ba86fbe2cc1afe251014387cdd1d9ee0b
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---87
+¦   ¦   ¦   ¦       74377164e82ea3bd5dba7a5a68530eebd57797
+¦   ¦   ¦   ¦       76280b64e5d10b6a4ab19ee648aff7e32cb49e
+¦   ¦   ¦   ¦       aa952bc561c6c8487a96aadc2c4437762ecb8e
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---88
+¦   ¦   ¦   ¦       4e1390bbd3441c6604f3a2195e0cc968b00345
+¦   ¦   ¦   ¦       637dbaecb1d4d6589b14dc2a860df1c2cd44d9
+¦   ¦   ¦   ¦       8026ab9bf40de4d3a9ecf9042b7e30e35c4cae
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---89
+¦   ¦   ¦   ¦       f9d48de13b0b2c6ce068ead84c172288f9ae51
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---8a
+¦   ¦   ¦   ¦       3ed2781228447fd999fe68c5dd670cd1481be8
+¦   ¦   ¦   ¦       f7e61936b6e3ec6f8827fcd0c0a8476a52659b
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---8b
+¦   ¦   ¦   ¦       2f4f0f1a7422b4ea292862b5fa220048173f32
+¦   ¦   ¦   ¦       46c9f5d1bbf47511c926db8450373de12171f2
+¦   ¦   ¦   ¦       d3f57a4ba71e9fa42ee7fbf86ba2144337b9fe
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---8c
+¦   ¦   ¦   ¦       7d4f3245cb7c83fea9abe17383a8881bda13b7
+¦   ¦   ¦   ¦       dd9fff3bcf43ec9c4a1a93f4fe988ef5f4d72d
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---8d
+¦   ¦   ¦   ¦       12245a29e79730c6453fe4058f0f457286a1e1
+¦   ¦   ¦   ¦       7390b1f40ebaf8d9678437d93d4ee1a906a53e
+¦   ¦   ¦   ¦       89f0956bc53690a3b538355e3705d0e0c2c84d
+¦   ¦   ¦   ¦       8c51c093b77589b68c8f2974a1f605593e8763
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---8e
+¦   ¦   ¦   ¦       7189199494f3ee8ccb0f450cf2a14b2f14ad76
+¦   ¦   ¦   ¦       b4ec986c01046e8109c410a35033e8849b78d2
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---90
+¦   ¦   ¦   ¦       65414df20ddf6c75da72e64bf4804831f30814
+¦   ¦   ¦   ¦       6f1eeb9dce66a0953e1d996aeca26aebd6e141
+¦   ¦   ¦   ¦       b71e4131b047201b35476638ea324b12f76113
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---92
+¦   ¦   ¦   ¦       3919bb60c440e97391e3e6503fa4fcafb89a83
+¦   ¦   ¦   ¦       432a0b10d92dc2c2e3588a90d2aa2ed0389f55
+¦   ¦   ¦   ¦       f60167e923a65dfa95c0e27afece81c0917743
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---93
+¦   ¦   ¦   ¦       98b331513e9668b8d76f2905d570c34d080fd2
+¦   ¦   ¦   ¦       d2b8122ddd7119c3580afa71e8c53708982983
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---94
+¦   ¦   ¦   ¦       66d8e6bb2f7adc3baeef4733934a29d4eaf63a
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---95
+¦   ¦   ¦   ¦       643d9c7099c1179f8a876fbf8840dc077e1b38
+¦   ¦   ¦   ¦       743716cac0097209d09772904ce65103a6cc2b
+¦   ¦   ¦   ¦       ba887fd8b3bca3f2c0b666a284fbbcf9765b32
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---96
+¦   ¦   ¦   ¦       295ffb69affacf59dc4b5b830b2f291c7274a2
+¦   ¦   ¦   ¦       368b9811dd09c2f49df728fc87072c630b05c8
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---97
+¦   ¦   ¦   ¦       0a326544766a2a1ccf774739f3e104cf6f2c9f
+¦   ¦   ¦   ¦       40bf2c12467a7b22fe579b31099c3bfe2c2010
+¦   ¦   ¦   ¦       af06f7329c699384efe7bdeda381a4fca609ac
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---98
+¦   ¦   ¦   ¦       846bed847c47a4208283e3c7e3bc535a282c96
+¦   ¦   ¦   ¦       c44f561579a489ad109633b57df97ecf2523ab
+¦   ¦   ¦   ¦       c8dd5e880189ddf2396825e310d5c9c9eab115
+¦   ¦   ¦   ¦       ff5a6f0f1ec30fc90dae3392e862e22bb389d3
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---99
+¦   ¦   ¦   ¦       2b0a75b1b9d27fbc774bca358285f69bc86ef5
+¦   ¦   ¦   ¦       aae18ed283745d371653a978aca2b4ee43bd6e
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---9b
+¦   ¦   ¦   ¦       4afcfbaa014b0feed25b20c22849e4d18df8eb
+¦   ¦   ¦   ¦       b84a56157317dbe9c8fdaa49dc6eb334f76717
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---9c
+¦   ¦   ¦   ¦       2b9bf3705d8421bef00704c0c52e83d371ca11
+¦   ¦   ¦   ¦       3e0aa7a4d92bc58575fd65a811c7494a1bd405
+¦   ¦   ¦   ¦       b7bbabdbd2c006aa98df87c5278bf3c310053e
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---9d
+¦   ¦   ¦   ¦       0e9a9473dec0194c1bc33f499adeec5144e1b4
+¦   ¦   ¦   ¦       3a26e6ec5d8647f22d754be5affd9e8eba1ec5
+¦   ¦   ¦   ¦       6199a66f449254aaf5a8e0b390ef1d8407e7c0
+¦   ¦   ¦   ¦       beaa096eef7b54a3272898770c4c32e00630af
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---9e
+¦   ¦   ¦   ¦       82e4064f020424114c6a98c043e105e0b7e867
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---9f
+¦   ¦   ¦   ¦       30909d9b391378419d4e0d1184b2fad93018c1
+¦   ¦   ¦   ¦       663ae3ffd30a5779fbb67b5b0f818800f07e22
+¦   ¦   ¦   ¦       94bf883a206dda6688f9211a440b205c754ec5
+¦   ¦   ¦   ¦       a48946afd1eb56bd932377fd888e3986304676
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---a0
+¦   ¦   ¦   ¦       06aab05060565a964245d374b07b272490f373
+¦   ¦   ¦   ¦       203eefcb88d0dcf5e5ff0e2f90150a1b46ee05
+¦   ¦   ¦   ¦       35703d01a831f3a14c1cb8d3101129326d0cd0
+¦   ¦   ¦   ¦       6807d78a0dede7d55776cd84fb6f3c20e4e204
+¦   ¦   ¦   ¦       8b4db56b62b797d5c36144c2801993c6fd149b
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---a1
+¦   ¦   ¦   ¦       24a01225fe6d51314aa73f29cf686fa046d0ac
+¦   ¦   ¦   ¦       733aaeb4fe6b693d07443511446887a1caca59
+¦   ¦   ¦   ¦       bd9484778ddb3b337a9612198e92f2dd12264d
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---a3
+¦   ¦   ¦   ¦       921f525940d81aa973a39c58698ed90425e4e0
+¦   ¦   ¦   ¦       a3f6c0403a42a95126855c1c89baaeaa95d6fa
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---a4
+¦   ¦   ¦   ¦       0d8b6e4276599313f5eebf116c88264ba03aca
+¦   ¦   ¦   ¦       32133a27eab0cbc79881a3d7289b06ccb8239d
+¦   ¦   ¦   ¦       3afaaac0d14ebb014fd06c20ab6ffecee08d07
+¦   ¦   ¦   ¦       5329abe18651148bdba6ad10738ed4954a0ef0
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---a5
+¦   ¦   ¦   ¦       d05cab357fc6945cdbcadb80f916206a0c99de
+¦   ¦   ¦   ¦       d12a6e451b0d99a039062a6ce43b283ab9613c
+¦   ¦   ¦   ¦       e93e2f14df8b6ce58af274dd448e53156dbae0
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---a6
+¦   ¦   ¦   ¦       23682dab53fbe9e1777b83b2e93763837653d8
+¦   ¦   ¦   ¦       3a6e0a181553a8f150af11e235ec37ee046248
+¦   ¦   ¦   ¦       9c977dab73f7aa64a9f42d1d8fe9e25ce8bd95
+¦   ¦   ¦   ¦       d287344211849f91cb3f7d68f72538821e604d
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---a7
+¦   ¦   ¦   ¦       0e713c5b4ecb2af186efe3fadea51805f26ba5
+¦   ¦   ¦   ¦       aa070b48f26125963e0921067279791f9e8d08
+¦   ¦   ¦   ¦       c869924d0d8e7cd815ba95da4f55d6b9dd2801
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---a8
+¦   ¦   ¦   ¦       066ae89337aceb67ddbd3b4161ffcc59355479
+¦   ¦   ¦   ¦       22477534192c4df5073e4015f7461e739d3344
+¦   ¦   ¦   ¦       26d6b5897fa0da3447bf7d6d2e859f84ba38d0
+¦   ¦   ¦   ¦       877ba9b25486863643cbc0ddb9ae1e6666cc80
+¦   ¦   ¦   ¦       e9b9e99b340ab0d0fec208a53fea410fa2cafc
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---a9
+¦   ¦   ¦   ¦       48dd239db18e845d7889b6053148d02817e08d
+¦   ¦   ¦   ¦       d6d9bb047ee2467f259b3493779a08e22d8cd4
+¦   ¦   ¦   ¦       ea910b1059b0b1b7c300011fb06eb3dfdfd0b4
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---aa
+¦   ¦   ¦   ¦       3c0ac09c3fbe760f50dc46c1029f03dc6fe68c
+¦   ¦   ¦   ¦       5be1e3d090b3fa022a61c044644b4f9f6de5a7
+¦   ¦   ¦   ¦       9956ab8e1bb1b948d8394396f3a1830af5752c
+¦   ¦   ¦   ¦       c4461148bc7cb698144484b4c24423fb3f3ef8
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---ab
+¦   ¦   ¦   ¦       0a30fb3daa5b3fe5a4158ee1372405aac50aba
+¦   ¦   ¦   ¦       390eeb4bf3f36ddd7635036792d3f267ab0e69
+¦   ¦   ¦   ¦       5fcc4aa73a650a200c0e80dd9cb1a4b1af4132
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---ac
+¦   ¦   ¦   ¦       2f8d7858b9d24612b5005328925ff6316b303f
+¦   ¦   ¦   ¦       f13a512ee1638ecb12474eb2733018f9b56707
+¦   ¦   ¦   ¦       f8f3971678716c848df85352dcc9f47bb91d96
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---ad
+¦   ¦   ¦   ¦       6330a1c3633cf5473c5d9efaf412418ff94684
+¦   ¦   ¦   ¦       9bc8931882ee98dd0784f627a0618286ebe7c4
+¦   ¦   ¦   ¦       fb2365d1f5706e9066b343611ee4f1c96e529e
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---ae
+¦   ¦   ¦   ¦       3ef0fd124d375274bdaf0e74d1520aeaf0625e
+¦   ¦   ¦   ¦       47e6286fed99422c9a7af72c6643c302c0cb97
+¦   ¦   ¦   ¦       68e0153e434682d6fbb82cd6c05be779e42502
+¦   ¦   ¦   ¦       b7b003af6a54ad339a670308e19a1ec43502ff
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---af
+¦   ¦   ¦   ¦       3adca3c37160317bf79e020257bbeb21138caa
+¦   ¦   ¦   ¦       6830567f348657593ed428b31ba063b5e5341a
+¦   ¦   ¦   ¦       7a505e19cc752d4b6c5923d454eca0484ed06b
+¦   ¦   ¦   ¦       9752d03c771c7f7c9e211359a7afc944c0a1a1
+¦   ¦   ¦   ¦       9a5e05be354bd5f62c334a9b0e279c79d54992
+¦   ¦   ¦   ¦       b292a5ee4c7a9119d9e26d9e4270f930c88b6c
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---b0
+¦   ¦   ¦   ¦       182ca983a20db74ec8a9789c485235aa23f856
+¦   ¦   ¦   ¦       f26de8d3ebbc54f5eb373c7725952c891c96fc
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---b1
+¦   ¦   ¦   ¦       7ffe0d1dc0707896b0ab589858dbb4b5edf9de
+¦   ¦   ¦   ¦       e4a8b5150af81212142c88f2be2817ec82f1f9
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---b2
+¦   ¦   ¦   ¦       4d4b09771cb6d03da130a1cb0c30c05bcd367e
+¦   ¦   ¦   ¦       9089fa20a55de8a4276a1da1b9ebe8666c4c3d
+¦   ¦   ¦   ¦       964405156bb6f206d3c8537a97ec28afc2e035
+¦   ¦   ¦   ¦       9e6354634d778689745291f2d4fe4c38e9c1b5
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---b3
+¦   ¦   ¦   ¦       199d3aa09c333e8712b70fdbf3fa1586330b2f
+¦   ¦   ¦   ¦       a264a6cc6fa465bf9ad54e68d9dccb589035e4
+¦   ¦   ¦   ¦       a8830a553c7a483968e06fdd7e887f51d1bfec
+¦   ¦   ¦   ¦       ae331613483abaa33da470959aa3eca5e4efad
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---b4
+¦   ¦   ¦   ¦       08485b35678eb02d709c7b83ecb142a7f9a087
+¦   ¦   ¦   ¦       c5b9ef73c69a3569ec24643fbd9c26b0548feb
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---b5
+¦   ¦   ¦   ¦       86bf18570f22a3d795415c091815c12ed0fbef
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---b6
+¦   ¦   ¦   ¦       d7d33fbcf4cc3937ee72931fcedfe02f325de8
+¦   ¦   ¦   ¦       eaf6bf631bcd15dda90b2945dfde4e1a33e774
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---b7
+¦   ¦   ¦   ¦       04cffffdb33536531c769ed771641a53edba31
+¦   ¦   ¦   ¦       592f182764c82d80a4f94c80924812aa8d6d2d
+¦   ¦   ¦   ¦       acc35858699d70792a588c76ffead9af49d753
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---b8
+¦   ¦   ¦   ¦       1c0a5dd2d5df56361206b96cd4be7bd94c4063
+¦   ¦   ¦   ¦       6fa6ffef1cd3df0e2653d6f7d012d3e500fd3c
+¦   ¦   ¦   ¦       d51edcd4d8f6e4066ad248e0f25f73ac679c89
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---b9
+¦   ¦   ¦   ¦       02f5abb69638c601389aa3ed4356f5d31e81fa
+¦   ¦   ¦   ¦       1d6c40074a055f1f107849831fa182e1cec3eb
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---ba
+¦   ¦   ¦   ¦       2ecd0aaf37eb43a5b7862d3c3d3caaec0fd864
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---bb
+¦   ¦   ¦   ¦       69610bda6fb4778a7bfeaeebe1be6a95d11cff
+¦   ¦   ¦   ¦       fb670c9ad2254f4d46b55fb5a03f6fb3c072f5
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---bc
+¦   ¦   ¦   ¦       d125a879c3efdcedc452b603d7a5d82ff6a5b3
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---bd
+¦   ¦   ¦   ¦       09bdb9e9435aef01cd417224dfbefd7ae9db0f
+¦   ¦   ¦   ¦       0c391ddd1088e9067844c48835bf4abcd61783
+¦   ¦   ¦   ¦       ca0466dfe1b0c021f01429b0927d7aaff835f3
+¦   ¦   ¦   ¦       e2a5a974dd41fe966da4befc04bbc74914aa7d
+¦   ¦   ¦   ¦       e38c615ff86890ecb7bf952b3ea4592297f75e
+¦   ¦   ¦   ¦       eb0b5be06f0e37d49d7626dace5dbf88d36306
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---be
+¦   ¦   ¦   ¦       25df0cf0577196055b99273dc14d928dc09717
+¦   ¦   ¦   ¦       a3adbcd3f7505474562eed2c5e789f22b3fbe0
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---c0
+¦   ¦   ¦   ¦       03de61baddfbc05048f8ebe08302285c48b52a
+¦   ¦   ¦   ¦       094446fa5c33a6ae24be0799a956300a1b90a7
+¦   ¦   ¦   ¦       df655c0bf26af1148d038e1d013e884663b240
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---c1
+¦   ¦   ¦   ¦       1ab5c634947869fce842d4604260fa1d735979
+¦   ¦   ¦   ¦       1efa29b1bde6933715d5d194ddaf05e5cb8726
+¦   ¦   ¦   ¦       7b0ccaa95dccfb96c75618e078efd263e54fd0
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---c2
+¦   ¦   ¦   ¦       c14305ae4b5dd4b6e07de563437e7375cb7084
+¦   ¦   ¦   ¦       e247f6ff5ebda2b18584b7b03360328cd7eb70
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---c3
+¦   ¦   ¦   ¦       65e70c91bdb395dbac01ee79b844f5115c6c93
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---c4
+¦   ¦   ¦   ¦       49bd6c5cce8bbe58239e13e30fbe64578fc5e2
+¦   ¦   ¦   ¦       8db5eb6818ddf1d02c44922375fb0d5068cb60
+¦   ¦   ¦   ¦       abbf37f217c715a0eaade7f45ac78600df419f
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---c5
+¦   ¦   ¦   ¦       a03f075f64a7f62133cbd7f1da0d1f69172ee9
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---c6
+¦   ¦   ¦   ¦       3dcc0aa9da8dca6de2f4a237526f7ac54e3536
+¦   ¦   ¦   ¦       76d499c34b1aa3e9062fdd9440503530c19bbe
+¦   ¦   ¦   ¦       8ee6b326720eb907db96e3e06270ddb9c3ed7b
+¦   ¦   ¦   ¦       96984bd2ad276140f8995bfc9687320d48541e
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---c8
+¦   ¦   ¦   ¦       27f38ca11246047bca0502909bf14c29b95efb
+¦   ¦   ¦   ¦       69e5cd5c24357c6e1b2ffb5eccaa07febaf574
+¦   ¦   ¦   ¦       b34e8761b9c4fd982dcdf9136d3a9aa09b39c7
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---c9
+¦   ¦   ¦   ¦       42340bd3fe2a2d3f95ffbc79ca5a01be48b2e7
+¦   ¦   ¦   ¦       57d78aa67dd15808376419daf7c7bf2db32d35
+¦   ¦   ¦   ¦       a56cba48dd1d491e892084ac257c093a6bd8a9
+¦   ¦   ¦   ¦       da4f717af261829b1787303ca31763cfc7e9bb
+¦   ¦   ¦   ¦       f604faa45c2e8bfb3f33cf83c0b786870783ea
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---ca
+¦   ¦   ¦   ¦       9852eebcc53b3ce9a009bc2b0b28a4b2c5ca1b
+¦   ¦   ¦   ¦       bfbfc59d955db9efc2049783cad4a71db55442
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---cb
+¦   ¦   ¦   ¦       2c6a9996611f7c6826427768036a203bd6d6a5
+¦   ¦   ¦   ¦       7fb23fad7df55326eca27449c8f6ebb01cd2c4
+¦   ¦   ¦   ¦       858c64555ce6ca61eb8b728ec0a2b177943b1b
+¦   ¦   ¦   ¦       8fb6526f627c073f00b7e2e1b9605f9612ded3
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---cc
+¦   ¦   ¦   ¦       02fadeb3fc537e8850c2b3a4c14eb58984b83c
+¦   ¦   ¦   ¦       0e2695daf461352ca7bb77fba4b5c95e65fd17
+¦   ¦   ¦   ¦       5cd163adea2b59fce599508afd9c47fb0e2c25
+¦   ¦   ¦   ¦       6240cc72646ea627d32690b3126371613318ac
+¦   ¦   ¦   ¦       99642ac524fcdf6c3e47177b38d40ab609c44b
+¦   ¦   ¦   ¦       b83a780d34d91b903d249520346acfe57efc03
+¦   ¦   ¦   ¦       be858e7ae54c9bb5ebb817ca8499db7acf4015
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---cd
+¦   ¦   ¦   ¦       42c6f046702076ee4073f02e8a188bb1980877
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---ce
+¦   ¦   ¦   ¦       81dd6aa209b3324b99cbdfb0eec9ae7c7d62a5
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---cf
+¦   ¦   ¦   ¦       035ad4ca7fae0fe9e779c9ec59cc978d168856
+¦   ¦   ¦   ¦       0d9781165305b2ad9078d3df206c2ac38bd270
+¦   ¦   ¦   ¦       253cf17056ce04827219643e484ea99c77cf6b
+¦   ¦   ¦   ¦       59e265628ddf1777835fb91139641b72dd35ca
+¦   ¦   ¦   ¦       76ebc4224e18df8a96e67f49e32f0bc1924e83
+¦   ¦   ¦   ¦       ca9aea9c40fc82fdd2f51a050da71d80c68cfb
+¦   ¦   ¦   ¦       e0d8e0088a2a1a23f8ac9bc4e2c797d9440a2b
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---d0
+¦   ¦   ¦   ¦       71df14602ea5f910048e6fdb10c42ad9d8c25d
+¦   ¦   ¦   ¦       eda200e3a97512ff72f2d2284d91017ede7484
+¦   ¦   ¦   ¦       efc4ce02c83685e7f3b35ad81cadd75c40b7ba
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---d1
+¦   ¦   ¦   ¦       60a55dde48fa4ec2a80f4943784bfee3d84e4b
+¦   ¦   ¦   ¦       8ecbc56c11728e8227d7b13f93a98f9782cd5a
+¦   ¦   ¦   ¦       bf108a3a24e40b7f392bf0b204ec202c665626
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---d2
+¦   ¦   ¦   ¦       df2e4782f74967803df3c91d6e7097d0f1c41e
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---d3
+¦   ¦   ¦   ¦       311054cd07a90d130f7996c79b3fc0feeede39
+¦   ¦   ¦   ¦       8d81b48321a6c6a85d4e1dae3bbcee418d6179
+¦   ¦   ¦   ¦       aecb71465275b3eb07b9c7cf9f3b2cb405611e
+¦   ¦   ¦   ¦       df9f75ae4e0c84d4982f924019d5157a66a8a9
+¦   ¦   ¦   ¦       f2c94318e0258120b9ed5b7b0ba84beabcc841
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---d4
+¦   ¦   ¦   ¦       e127ce82eabc39de85c9a40b4d38be3c8a2a17
+¦   ¦   ¦   ¦       e2e28f02d12ac298460849a7dba0b2635bd30b
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---d5
+¦   ¦   ¦   ¦       9770c52122d8e8ad75701c23a0e793f65fa03b
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---d6
+¦   ¦   ¦   ¦       28da4df1b58cf6074226fbeecf5857797bc4f4
+¦   ¦   ¦   ¦       9953150102c51abfd5d0824d073fb969904e90
+¦   ¦   ¦   ¦       e78014fc491465c059253d541b10afdaa3227a
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---d7
+¦   ¦   ¦   ¦       8b3e6ff970731244863afcac1356b43dba244b
+¦   ¦   ¦   ¦       8e16ad5060866fd34a294bc3c74a6ea02dd64b
+¦   ¦   ¦   ¦       e45f7bd315f86eabf32f2c9425223417920e60
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---d8
+¦   ¦   ¦   ¦       120827278d7c25808fb58e3db19b6d9c30fcdd
+¦   ¦   ¦   ¦       25862dab60e9b3beb9d195ab4ce9ae142f8957
+¦   ¦   ¦   ¦       3a8e5c978aa8cbb0ba03940bc7e0647aef8386
+¦   ¦   ¦   ¦       99ae8809632c6cba86e7b723a61a707d61c541
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---d9
+¦   ¦   ¦   ¦       0e65e6629b5196e130bb376d4b36c8ed9af539
+¦   ¦   ¦   ¦       5c3fa92ae0e03b5a9336bed689042735343968
+¦   ¦   ¦   ¦       a37da04bb23251dd81c8c8fe40a8e146703a6a
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---da
+¦   ¦   ¦   ¦       3c45a5526ff39311e27d018ce935e215876ad9
+¦   ¦   ¦   ¦       6689aaa1a35720ac1b1584caa532f3bdad8c01
+¦   ¦   ¦   ¦       8ab4f13247d483cfef5a3cbd079a3f117df8f9
+¦   ¦   ¦   ¦       d0c59edb390f449f66974af3ecffc1866e5e85
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---db
+¦   ¦   ¦   ¦       a9f8316f8e796e2808090c4f6cf770e6b90c4a
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---dd
+¦   ¦   ¦   ¦       08957f09bf2d31273c0fa6aeceb7e39402d67f
+¦   ¦   ¦   ¦       19bcf91e79a09e980078afa2ce49429b9a3e07
+¦   ¦   ¦   ¦       27cb62163e903ce85379a960e2f12203fada46
+¦   ¦   ¦   ¦       4c54af41a48bab9df1c7b1803aef1dc1c25d25
+¦   ¦   ¦   ¦       66ac0051c385a85a5d8a20d03fe95439849ba7
+¦   ¦   ¦   ¦       8cb5cafd46ff283e7cda248038b91317ffd598
+¦   ¦   ¦   ¦       d21b6d8a7dd164411e827e112b133f37ca7f6f
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---de
+¦   ¦   ¦   ¦       6f2e519efb45463ee9d3822db567f39a8762a3
+¦   ¦   ¦   ¦       94cbc312b9aa7fe99677d01500d9e4b1f119b5
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---df
+¦   ¦   ¦   ¦       24dbc2f8d92bffaf44b35f6db9dfdad560710f
+¦   ¦   ¦   ¦       df1a6ccf051ca3490169ba541c9fc947cb0d97
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---e0
+¦   ¦   ¦   ¦       1da46283e4f63c23a22df0044fadd32fc3d347
+¦   ¦   ¦   ¦       4f24fa44195c868b4b3195b8aec7ba9cb7c80d
+¦   ¦   ¦   ¦       a45d5f6b3f4da797587ed3f547ac3bec95662a
+¦   ¦   ¦   ¦       c40f69601b6826e94c97df44f0d326063360d6
+¦   ¦   ¦   ¦       df8789338a48b716e958c274335d2b8be795d8
+¦   ¦   ¦   ¦       f9bda09d1280020e19b5b29b8f8d7ed56b962e
+¦   ¦   ¦   ¦       fcfda673097db49bf5dc0e93b262191715d131
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---e1
+¦   ¦   ¦   ¦       626b71199af57418f36d398ec272f255321f8d
+¦   ¦   ¦   ¦       797c93458f3751a2e0f1189ff50d77f20ae3ed
+¦   ¦   ¦   ¦       922d7626c756c4414f74cd6c5f348e340f31af
+¦   ¦   ¦   ¦       983fe6d407ebef8f9ef333c3e79755e2189f76
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---e2
+¦   ¦   ¦   ¦       ecdfa04d2a8acc352abe8e2765139e673b3802
+¦   ¦   ¦   ¦       f8677082533f6712ffac871731c502963d9471
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---e4
+¦   ¦   ¦   ¦       037b4ee2f9c574f6c3c86bbc3dfba030dfa8be
+¦   ¦   ¦   ¦       3fa4d449820a3504d35ba5d43fdaf9ad514234
+¦   ¦   ¦   ¦       993dece8786f1c1748cc30ba229b0f1e65fcc2
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---e5
+¦   ¦   ¦   ¦       6b0affd7e03bd8359092a81d81c606ab09972d
+¦   ¦   ¦   ¦       98490621ac6b666169b9fd71adce8410127f37
+¦   ¦   ¦   ¦       9a85e81aefa4c55214f7692ae09cb077bd4ed7
+¦   ¦   ¦   ¦       a36ec55d989c7c59ac1340b175e9d85bf8e37e
+¦   ¦   ¦   ¦       d3b2bb7e23c978475f8f7426b199393241b20b
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---e6
+¦   ¦   ¦   ¦       45ec0f587d020bb4c2c76d32ef7988d6e28525
+¦   ¦   ¦   ¦       a181d346965af33870c8a9de9f55e44e0b442a
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---e7
+¦   ¦   ¦   ¦       0cdb61330369228db50631375590a7461b7d8f
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---e8
+¦   ¦   ¦   ¦       b3b69851e5c7910aa0ccc185acc7b342230589
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---e9
+¦   ¦   ¦   ¦       2eafdc7d5372f0e58353187a8c745f3383309c
+¦   ¦   ¦   ¦       ac57b62ea1e0091d7537306b7a744bea4e90b2
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---ea
+¦   ¦   ¦   ¦       099fec21d86bd7f411e257beb1e7a31285d025
+¦   ¦   ¦   ¦       406269f2672286ad8c812574942fc4eba66933
+¦   ¦   ¦   ¦       b8b028f9890d4bb83ba475e8139b0f8b6c8130
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---ec
+¦   ¦   ¦   ¦       8041d11a7a25c9557c2c85a69d607c59bee1c0
+¦   ¦   ¦   ¦       b115ae6b29cc9e286e0901678b6efe994c1012
+¦   ¦   ¦   ¦       cc8bf166142d511b0b61bb6c5b73a8d64ef232
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---ed
+¦   ¦   ¦   ¦       fd196d906e071948c961a2fcc06448bcc7ab68
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---ee
+¦   ¦   ¦   ¦       1258e9f14c63ac06a403f2b1ff041b12222096
+¦   ¦   ¦   ¦       25bd1cea235a88ab910fad87990c39e02cbaa2
+¦   ¦   ¦   ¦       44c23de17ba86e68d850986bd5115c2834bed9
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---ef
+¦   ¦   ¦   ¦       7dd2f00dfa37dd3c3d6e91e6b6e64d05ef8fb3
+¦   ¦   ¦   ¦       ee4db02b4340e24083f9db51486dfc4e5d304e
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---f1
+¦   ¦   ¦   ¦       21130310ef5c519005e75737afe7582390e079
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---f2
+¦   ¦   ¦   ¦       58171e06b89857aa47a449e9364289ae98e991
+¦   ¦   ¦   ¦       79e610f9f6a44e0fda4926e6f6d8d85205f161
+¦   ¦   ¦   ¦       c1e36ec61d783a672e3906c7959510241b1141
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---f3
+¦   ¦   ¦   ¦       02184d31113718eea36edfc7e0545b7043d963
+¦   ¦   ¦   ¦       15a142495772235f6e5324668ce3bc34ef1871
+¦   ¦   ¦   ¦       6635c2d3255716efd6138620f560f1752b48af
+¦   ¦   ¦   ¦       d92a34c42c93e2211c2ced453b0ababc2b9756
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---f4
+¦   ¦   ¦   ¦       219e26a6db39c227767f882f52aee15a0f961c
+¦   ¦   ¦   ¦       401077f60c23ae0c2e803b5735f2ab0553c855
+¦   ¦   ¦   ¦       4d16e590a25301d48351790fca62a898506b2f
+¦   ¦   ¦   ¦       bc5586b67f45d3cc35f228e8bac2e4bc2cea16
+¦   ¦   ¦   ¦       c42f633f113106a80465b88a2656a3849ab177
+¦   ¦   ¦   ¦       cdd559d1d611c71a69f2491c5d3f42e44a4160
+¦   ¦   ¦   ¦       fc88a4c095af01b59a121a31b0e2f2ffa403e6
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---f5
+¦   ¦   ¦   ¦       071cc6f2d533d3d2f52aeb5d97ae6371c050a6
+¦   ¦   ¦   ¦       51bad3eff373ec658cdacbbdb15bbfebb36720
+¦   ¦   ¦   ¦       a3fadff186fb4bbe0eb531717d8dc232057387
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---f6
+¦   ¦   ¦   ¦       4cc18a39d971ec0b5774073118d19362fae596
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---f7
+¦   ¦   ¦   ¦       048ac43f63a3ba976399d358271f672f807c2e
+¦   ¦   ¦   ¦       891c9cc8ba7868f4b5bdb67dc883b1880ade9f
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---f8
+¦   ¦   ¦   ¦       18fcc217cfb7b626a73867ee14b17f0833199e
+¦   ¦   ¦   ¦       6c957ad63871d7458e5464a38cfb830f35f2e5
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---f9
+¦   ¦   ¦   ¦       ba7f8b4901d059a522d76272612aa2a8321bc3
+¦   ¦   ¦   ¦       c32d1de2ebbf0c226714face9eb749d980d860
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---fa
+¦   ¦   ¦   ¦       16d2bf068bda2923f45f2b7aabad90f913345a
+¦   ¦   ¦   ¦       2b4429f4303210462ad03f9f49280ac5ae07ce
+¦   ¦   ¦   ¦       74c185e19f5584b2eac022487b39ef7949508b
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---fb
+¦   ¦   ¦   ¦       1695e576b7460cc39198c24927e23639f1d33f
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---fd
+¦   ¦   ¦   ¦       5bb3d6ea495f36cabeac9474f6c528f3a58205
+¦   ¦   ¦   ¦       87c728000035f24aa0c50f015042274e9de6ab
+¦   ¦   ¦   ¦       cb511dc768b79951de97416e9bd0ff1ae9ea05
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---fe
+¦   ¦   ¦   ¦       2407aa26a3efabc82960c7ba7bb8b20f75edae
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---ff
+¦   ¦   ¦   ¦       191f7a7b7e33bdc73aca9ee7f5cb8a4ee4af6c
+¦   ¦   ¦   ¦       7d583bdd3e19e61e6f7623069f0a745cadc9a4
+¦   ¦   ¦   ¦       f1ec6944bbdcd052d7735986502ac69c3cf47f
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---info
+¦   ¦   ¦   +---pack
+¦   ¦   +---refs
+¦   ¦       +---heads
+¦   ¦       ¦       main
+¦   ¦       ¦       replit-agent
+¦   ¦       ¦       
+¦   ¦       +---remotes
+¦   ¦       ¦   +---gitsafe-backup
+¦   ¦       ¦   ¦       main
+¦   ¦       ¦   ¦       
+¦   ¦       ¦   +---origin
+¦   ¦       ¦           main
+¦   ¦       ¦           
+¦   ¦       +---replit
+¦   ¦       ¦       agent-ledger
+¦   ¦       ¦       
+¦   ¦       +---tags
+¦   +---.local
+¦   ¦   +---state
+¦   ¦       +---replit
+¦   ¦           +---agent
+¦   ¦                   .agent_state_007d2bad5c00b876b44cf89ceb306dbf734c5fc6.bin
+¦   ¦                   .agent_state_01338efe89dc1830190d7420106122f3b73793da.bin
+¦   ¦                   .agent_state_024a68ceea67612bb8a36be8d34b36a355f48039.bin
+¦   ¦                   .agent_state_054610fbdc9025445907b477c50d82c82e9fbec0.bin
+¦   ¦                   .agent_state_08a0d01d5386050355006bd18c66ea23220bb36a.bin
+¦   ¦                   .agent_state_0a701559010b6925d5508944d01c790454cdd708.bin
+¦   ¦                   .agent_state_0c682e04f1ad286482d5ea2238f08fa171f8c926.bin
+¦   ¦                   .agent_state_0d2ac765877fc73ed663e94dce3b4580539a2613.bin
+¦   ¦                   .agent_state_10a1e7359cd509b1402b33f30bd1e71a1de081b5.bin
+¦   ¦                   .agent_state_11dc27f9c121c6a8ed0ae4a1daf94c5eb16795ea.bin
+¦   ¦                   .agent_state_12803351f408826bad50ff668b6aafe5f64d4930.bin
+¦   ¦                   .agent_state_14dc793ffd0e46d2fbf28ea6ad6dea8a6f361aac.bin
+¦   ¦                   .agent_state_209a124b3a8ebc4a9ef56f0cf1aac27a5c4030da.bin
+¦   ¦                   .agent_state_20c0866ad2412f7256e480e9aa527df2276dabe1.bin
+¦   ¦                   .agent_state_21040e645ecc6336f17efec14d8fa54daa582c08.bin
+¦   ¦                   .agent_state_25f78488f2928092069974b0c42bc121055891ad.bin
+¦   ¦                   .agent_state_2cc62a9900049d8b0cf06e5b4dc75150764031df.bin
+¦   ¦                   .agent_state_306d74aec6e5024f2c36606fe4324e15af5866d3.bin
+¦   ¦                   .agent_state_33b6bc11fd3eb4a080ea17c5394af35b6a0f8fda.bin
+¦   ¦                   .agent_state_3a01962fd7f462377531b5549991761ed5ebf489.bin
+¦   ¦                   .agent_state_3a36e09c119137dac005866fb08fb768a145db00.bin
+¦   ¦                   .agent_state_3bcb1fd939fd52184a273daf28ebc5d2d5501e68.bin
+¦   ¦                   .agent_state_3d3dc18d91f092e34c77b2ed9cb5c7caacb8888f.bin
+¦   ¦                   .agent_state_3ee01dbf7725391d54c4456317d3b201af74ecaf.bin
+¦   ¦                   .agent_state_402230e28602fc20e8c58e7179df9dd63378b627.bin
+¦   ¦                   .agent_state_42dbba7fe6dbd9b8ff6b4acc3cbbce102c700793.bin
+¦   ¦                   .agent_state_48b4aee606a99dc4eccf5223916ce873f7475b25.bin
+¦   ¦                   .agent_state_4fe6d532f85683daedb53c9be61bc9b1c80f8694.bin
+¦   ¦                   .agent_state_510d21288b7b5c821dae25101c48883d49237238.bin
+¦   ¦                   .agent_state_5490e2a4c4d1a97171004d749e617a649dc025b9.bin
+¦   ¦                   .agent_state_566430d3fa38a0022a152bb7f1e73e37216a2e3c.bin
+¦   ¦                   .agent_state_5b2cd3ac77247878c389121292e807d78b1df5f6.bin
+¦   ¦                   .agent_state_63344918dd3bed83e77257b4e733eeda9987f7e0.bin
+¦   ¦                   .agent_state_645ff61f7249638b50358347408ef7f4d08f90ad.bin
+¦   ¦                   .agent_state_6879e7ebaf99a5a65bd70531ed1268ca9ed86ff2.bin
+¦   ¦                   .agent_state_6c384ebc0ab2d9824d5e47450bc4a7d19ed8374f.bin
+¦   ¦                   .agent_state_71de300a717a2ac2a268958549ae2bd75895226d.bin
+¦   ¦                   .agent_state_724b6906120fdac5df9be494090e40e37cdd123e.bin
+¦   ¦                   .agent_state_7be55a257e0c2d06425742f33e54bdc331042520.bin
+¦   ¦                   .agent_state_7dab93fb7f2b9f052a1b27cb730e15eb438adf76.bin
+¦   ¦                   .agent_state_7ef26e98fb20a63c8500115aaebc294c0694c00c.bin
+¦   ¦                   .agent_state_80abcca2ef8e06ff5222929fef660aa07382a04c.bin
+¦   ¦                   .agent_state_8b2f4f0f1a7422b4ea292862b5fa220048173f32.bin
+¦   ¦                   .agent_state_8b46c9f5d1bbf47511c926db8450373de12171f2.bin
+¦   ¦                   .agent_state_9065414df20ddf6c75da72e64bf4804831f30814.bin
+¦   ¦                   .agent_state_923919bb60c440e97391e3e6503fa4fcafb89a83.bin
+¦   ¦                   .agent_state_9466d8e6bb2f7adc3baeef4733934a29d4eaf63a.bin
+¦   ¦                   .agent_state_96295ffb69affacf59dc4b5b830b2f291c7274a2.bin
+¦   ¦                   .agent_state_96368b9811dd09c2f49df728fc87072c630b05c8.bin
+¦   ¦                   .agent_state_9d6199a66f449254aaf5a8e0b390ef1d8407e7c0.bin
+¦   ¦                   .agent_state_a8066ae89337aceb67ddbd3b4161ffcc59355479.bin
+¦   ¦                   .agent_state_aac4461148bc7cb698144484b4c24423fb3f3ef8.bin
+¦   ¦                   .agent_state_af7a505e19cc752d4b6c5923d454eca0484ed06b.bin
+¦   ¦                   .agent_state_b902f5abb69638c601389aa3ed4356f5d31e81fa.bin
+¦   ¦                   .agent_state_c0094446fa5c33a6ae24be0799a956300a1b90a7.bin
+¦   ¦                   .agent_state_d59770c52122d8e8ad75701c23a0e793f65fa03b.bin
+¦   ¦                   .agent_state_d69953150102c51abfd5d0824d073fb969904e90.bin
+¦   ¦                   .agent_state_d9a37da04bb23251dd81c8c8fe40a8e146703a6a.bin
+¦   ¦                   .agent_state_da8ab4f13247d483cfef5a3cbd079a3f117df8f9.bin
+¦   ¦                   .agent_state_dfdf1a6ccf051ca3490169ba541c9fc947cb0d97.bin
+¦   ¦                   .agent_state_e01da46283e4f63c23a22df0044fadd32fc3d347.bin
+¦   ¦                   .agent_state_e9ac57b62ea1e0091d7537306b7a744bea4e90b2.bin
+¦   ¦                   .agent_state_edfd196d906e071948c961a2fcc06448bcc7ab68.bin
+¦   ¦                   .agent_state_ee44c23de17ba86e68d850986bd5115c2834bed9.bin
+¦   ¦                   .agent_state_ef7dd2f00dfa37dd3c3d6e91e6b6e64d05ef8fb3.bin
+¦   ¦                   .agent_state_f9c32d1de2ebbf0c226714face9eb749d980d860.bin
+¦   ¦                   .agent_state_main.bin
+¦   ¦                   .latest.json
+¦   ¦                   repl_state.bin
+¦   ¦                   
+¦   +---attached_assets
+¦   ¦       image_1768488691383.png
+¦   ¦       image_1768561140013.png
+¦   ¦       image_1768561797145.png
+¦   ¦       image_1768561895685.png
+¦   ¦       image_1768566200154.png
+¦   ¦       image_1768567361697.png
+¦   ¦       Pasted--doctype-html-html-lang-en-head-meta-charset-utf-8-meta_1768058185631.txt
+¦   ¦       Pasted-1-Marketplace-Communication-Enhancements-Real-time-Nego_1768117022168.txt
+¦   ¦       Pasted-1-Marketplace-Communication-Enhancements-Real-time-Nego_1768117102725.txt
+¦   ¦       Pasted-Digital-Krishi-Bazaar-Code-Explanation-Profiles-and-Cre_1768058216278.txt
+¦   ¦       Pasted-Digital-Krishi-Bazaar-Code-Explanation-Profiles-and-Cre_1768058219706.txt
+¦   ¦       WhatsApp_Image_2026-01-16_at_4.27.43_PM_1768561171305.jpeg
+¦   ¦       
+¦   +---client
+¦   ¦   ¦   index.html
+¦   ¦   ¦   
+¦   ¦   +---public
+¦   ¦   ¦       favicon.png
+¦   ¦   ¦       opengraph.jpg
+¦   ¦   ¦       
+¦   ¦   +---src
+¦   ¦       ¦   App.tsx
+¦   ¦       ¦   i18n.ts
+¦   ¦       ¦   index.css
+¦   ¦       ¦   main.tsx
+¦   ¦       ¦   
+¦   ¦       +---components
+¦   ¦       ¦   ¦   activity-log.tsx
+¦   ¦       ¦   ¦   app-shell.tsx
+¦   ¦       ¦   ¦   auth-screen.tsx
+¦   ¦       ¦   ¦   chat-center.tsx
+¦   ¦       ¦   ¦   dashboard.tsx
+¦   ¦       ¦   ¦   marketplace.tsx
+¦   ¦       ¦   ¦   orders-tab.tsx
+¦   ¦       ¦   ¦   profile-page.tsx
+¦   ¦       ¦   ¦   role-selection-screen.tsx
+¦   ¦       ¦   ¦   
+¦   ¦       ¦   +---ui
+¦   ¦       ¦           accordion.tsx
+¦   ¦       ¦           alert-dialog.tsx
+¦   ¦       ¦           alert.tsx
+¦   ¦       ¦           aspect-ratio.tsx
+¦   ¦       ¦           avatar.tsx
+¦   ¦       ¦           badge.tsx
+¦   ¦       ¦           breadcrumb.tsx
+¦   ¦       ¦           button-group.tsx
+¦   ¦       ¦           button.tsx
+¦   ¦       ¦           calendar.tsx
+¦   ¦       ¦           card.tsx
+¦   ¦       ¦           carousel.tsx
+¦   ¦       ¦           chart.tsx
+¦   ¦       ¦           checkbox.tsx
+¦   ¦       ¦           collapsible.tsx
+¦   ¦       ¦           command.tsx
+¦   ¦       ¦           context-menu.tsx
+¦   ¦       ¦           dialog.tsx
+¦   ¦       ¦           drawer.tsx
+¦   ¦       ¦           dropdown-menu.tsx
+¦   ¦       ¦           empty.tsx
+¦   ¦       ¦           field.tsx
+¦   ¦       ¦           form.tsx
+¦   ¦       ¦           hover-card.tsx
+¦   ¦       ¦           input-group.tsx
+¦   ¦       ¦           input-otp.tsx
+¦   ¦       ¦           input.tsx
+¦   ¦       ¦           item.tsx
+¦   ¦       ¦           kbd.tsx
+¦   ¦       ¦           label.tsx
+¦   ¦       ¦           menubar.tsx
+¦   ¦       ¦           navigation-menu.tsx
+¦   ¦       ¦           pagination.tsx
+¦   ¦       ¦           popover.tsx
+¦   ¦       ¦           progress.tsx
+¦   ¦       ¦           radio-group.tsx
+¦   ¦       ¦           resizable.tsx
+¦   ¦       ¦           scroll-area.tsx
+¦   ¦       ¦           select.tsx
+¦   ¦       ¦           separator.tsx
+¦   ¦       ¦           sheet.tsx
+¦   ¦       ¦           sidebar.tsx
+¦   ¦       ¦           skeleton.tsx
+¦   ¦       ¦           slider.tsx
+¦   ¦       ¦           sonner.tsx
+¦   ¦       ¦           spinner.tsx
+¦   ¦       ¦           switch.tsx
+¦   ¦       ¦           table.tsx
+¦   ¦       ¦           tabs.tsx
+¦   ¦       ¦           textarea.tsx
+¦   ¦       ¦           toast.tsx
+¦   ¦       ¦           toaster.tsx
+¦   ¦       ¦           toggle-group.tsx
+¦   ¦       ¦           toggle.tsx
+¦   ¦       ¦           tooltip.tsx
+¦   ¦       ¦           
+¦   ¦       +---hooks
+¦   ¦       ¦       use-auth.ts
+¦   ¦       ¦       use-dashboard-stats.ts
+¦   ¦       ¦       use-market-intelligence.ts
+¦   ¦       ¦       use-marketplace.ts
+¦   ¦       ¦       use-messages.ts
+¦   ¦       ¦       use-mobile.tsx
+¦   ¦       ¦       use-orders.ts
+¦   ¦       ¦       use-toast.ts
+¦   ¦       ¦       
+¦   ¦       +---lib
+¦   ¦       ¦       auth-utils.ts
+¦   ¦       ¦       queryClient.ts
+¦   ¦       ¦       utils.ts
+¦   ¦       ¦       
+¦   ¦       +---pages
+¦   ¦               admin.tsx
+¦   ¦               home.tsx
+¦   ¦               not-found.tsx
+¦   ¦               
+¦   +---script
+¦   ¦       build.ts
+¦   ¦       
+¦   +---server
+¦   ¦   ¦   auth-utils.ts
+¦   ¦   ¦   db.ts
+¦   ¦   ¦   index.ts
+¦   ¦   ¦   routes.ts
+¦   ¦   ¦   static.ts
+¦   ¦   ¦   storage.ts
+¦   ¦   ¦   vite.ts
+¦   ¦   ¦   
+¦   ¦   +---replit_integrations
+¦   ¦       +---auth
+¦   ¦               index.ts
+¦   ¦               replitAuth.ts
+¦   ¦               routes.ts
+¦   ¦               storage.ts
+¦   ¦               
+¦   +---shared
+¦       ¦   schema.ts
+¦       ¦   
+¦       +---models
+¦               auth.ts
+¦               
++---fonts.googleapis.com
+¦       css2.css
+¦       
++---fonts.gstatic.com
+¦   +---s
+¦       +---dmsans
+¦       ¦   +---v17
+¦       ¦           rP2Hp2ywxg089UriCZ2IHSeH.woff2
+¦       ¦           rP2Hp2ywxg089UriCZOIHQ.woff2
+¦       ¦           
+¦       +---playfairdisplay
+¦           +---v40
+¦                   nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2
+¦                   
++---images.unsplash.com
+¦       photo-1518977956812-cd3dbadaaf31.jpg
+¦       photo-1546470427-227c7369a9b0.html
+¦       photo-1554224155-6726b3ff858f.jpg
+¦       photo-1560493676-04071c5f467b.jpg
+¦       photo-1574323347407-f5e1ad6d020b.jpg
+¦       photo-1586201375761-83865001e31c.jpg
+¦       photo-1589923188651-268a9765e432.jpg
+¦       photo-1605000797499-95a51c5269ae.jpg
+¦       
++---_DataURI
+        data.03e105d55361d8.txt
+        data.0c4792060a9e1.txt
+        data.2c9cfcf898fc3.txt
+        data.3882242fff9578.txt
+        data.5f3fe9e94011c8.txt
+        data.8426a52ea0e248.txt
+        data.950497d4aebc8.txt
+        data.9997bae13db98.txt
+        data.c37a8e57e91bb8.txt
+        data.c5d43d6c29bf3.txt
+        data.d00c53d6dedf2.txt
+        data.e54e80a0fad3b8.txt
+        data.e6c44ce6285d98.txt
+        data.ea0c5a35396b78.txt
+        

@@ -1,0 +1,47 @@
+1. Marketplace & Communication Enhancements
+Real-time Negotiation Chat:
+
+Implement a direct messaging system using Firebase Firestore. Once a bid is placed, allow the buyer and seller to chat to finalize price, quality, and pickup details.
+
+Geolocation & Radius Search:
+
+Agricultural goods are expensive to transport. Use the navigator.geolocation API to store the farmer's location and allow buyers to filter produce available within a 50km–100km radius.
+
+Farmer Ratings & Verification:
+
+Allow buyers to leave reviews after a successful transaction. Add a "Verified Farmer" badge for users who upload a government-issued farmer ID.
+
+2. Logistics & Transaction Tools
+Escrow Payment System:
+
+Instead of simulated bidding, integrate a payment gateway like Razorpay or Stripe. Hold the payment in "escrow" and only release it to the farmer once the buyer confirms they have received the produce.
+
+Order Status Tracking:
+
+Create an "Orders" tab that tracks the lifecycle of a sale: Bid Accepted → Packing → In Transit → Delivered.
+
+Digital Invoicing:
+
+Automatically generate a PDF receipt for every completed trade that both parties can download for their records.
+
+3. AI & Data Intelligence (Using Gemini)
+Visual Crop Disease Detection:
+
+Allow farmers to upload a photo of a sick plant. Use the Gemini 1.5 Pro/Flash vision capabilities to analyze the image and suggest potential treatments or pesticide types.
+
+Smart Price Forecasting:
+
+Collect historical data on the platform to show a chart of how crop prices (e.g., Tomatoes) have fluctuated over the last 6 months, helping farmers decide when to sell.
+
+4. Accessibility & Community
+Multi-language Support (Localization):
+
+Agriculture is regional. Use an internationalization library (like i18next) to offer the app in Hindi, Marathi, Telugu, or other local languages. Gemini can even be used to auto-translate activity logs for buyers.
+
+Community Knowledge Forum:
+
+A space where farmers can ask questions (e.g., "Why are my soybean leaves turning yellow?") and other experienced farmers or AI advisors can provide answers.
+
+Offline Mode:
+
+Since internet in rural areas can be unstable, use Service Workers (PWA) to allow farmers to log activities offline and sync them to Firebase once they are back in a 4G/Wi-Fi zone.

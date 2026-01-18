@@ -1,0 +1,766 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Digital Krishi Bazaar — Bidding Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* --- DESIGN SYSTEM --- */
+    :root{--green:#198754;--light:#f0fdf4;--muted:#64748b;--shadow:0 10px 40px rgba(25,135,84,0.1);}
+    *{box-sizing:border-box;font-family:'Inter',sans-serif;}
+    body{margin:0;background:linear-gradient(180deg, #f8fafc 0%, #fff 100%);color:#1e293b;min-height:100vh;}
+    .hidden{display:none !important;}
+    .center-screen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;}
+    
+    /* COMPONENTS */
+    .card{background:#fff;border-radius:20px;box-shadow:var(--shadow);padding:25px;margin-bottom:25px;border:1px solid #f1f5f9;}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 24px;border-radius:12px;background:var(--green);color:#fff;font-weight:700;border:none;cursor:pointer;transition:all 0.2s;width:100%;font-size:15px;}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 5px 15px rgba(25,135,84,0.3);}
+    .btn:active{transform:scale(0.98);}
+    .btn.secondary{background:transparent;border:2px solid var(--green);color:var(--green);}
+    .btn.secondary:hover{background:var(--green);color:#fff;}
+    .btn.active-tab{background:var(--green);color:#fff;box-shadow:0 4px 12px rgba(25,135,84,0.2);}
+
+    /* --- BUTTON STYLES --- */
+    .btn.small{padding:8px 14px;font-size:13px;font-weight:600;}
+    .btn.orange{background:#f97316;border-color:#f97316;color:#fff;}
+    .btn.orange:hover{background:#ea580c;}
+    .btn.red{background:#dc2626;border-color:#dc2626;color:#fff;}
+    .btn.red:hover{background:#b91c1c;}
+    .btn.blue{background:#2563eb;border-color:#2563eb;color:#fff;}
+    .btn.blue:hover{background:#1d4ed8;}
+    .btn.green-outline{background:transparent;border:2px solid var(--green);color:var(--green);}
+    .btn.green-outline:hover{background:var(--green);color:#fff;}
+    
+    /* FORMS */
+    input,select,textarea{width:100%;padding:14px;border:2px solid #e2e8f0;border-radius:12px;margin-top:8px;font-size:15px;transition:0.2s;}
+    input:focus,select:focus,textarea:focus{border-color:var(--green);outline:none;}
+    .label{font-weight:700;font-size:14px;color:#475569;margin-top:20px;display:block;}
+    
+    /* LAYOUT */
+    .app-container{max-width:1100px;margin:0 auto;min-height:100vh;background:#f8fafc;}
+    @media(min-width:1024px){.app-container{margin:40px auto;border-radius:24px;box-shadow:0 0 50px rgba(0,0,0,0.05);overflow:hidden;min-height:auto;}}
+    header.app-header{background:var(--green);color:#fff;padding:20px 30px;display:flex;justify-content:space-between;align-items:center;}
+    nav.tabs{background:#fff;padding:15px 30px;display:flex;gap:15px;border-bottom:1px solid #e2e8f0;}
+    nav.tabs button{flex:1;padding:12px;border:2px solid transparent;background:#f8fafc;color:#64748b;font-weight:700;border-radius:12px;cursor:pointer;transition:0.2s;}
+    nav.tabs button.active{background:#fff;border-color:var(--green);color:var(--green);box-shadow:0 4px 12px rgba(25,135,84,0.2);}
+    main.content{padding:30px;}
+    
+    /* SPECIFIC ELEMENTS */
+    .news-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:20px;}
+    .news-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,0.05);transition:0.2s;}
+    .news-card:hover{transform:translateY(-3px);}
+    .news-card img{width:100%;height:150px;object-fit:cover;}
+    .listing{display:flex;gap:20px;padding:20px;background:#fff;border-radius:16px;border:1px solid #e2e8f0;margin-bottom:15px;align-items:center;}
+    .listing img{width:90px;height:90px;border-radius:12px;object-fit:cover;background:#f1f5f9;}
+    .error-banner{background:#fef2f2;color:#991b1b;padding:15px;border-radius:12px;border-left:5px solid #dc2626;margin-bottom:20px;}
+    .loader{border:3px solid #f3f3f3;border-top:3px solid var(--green);border-radius:50%;width:30px;height:30px;animation:spin 1s linear infinite;margin:30px auto;}
+    @keyframes spin{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+
+    /* ACTION BUTTONS LAYOUT */
+    .buyer-actions{display:flex;flex-direction:column;gap:8px;width:160px;}
+    .buyer-actions .btn{width:100%;}
+    .seller-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:flex-end;}
+    .seller-actions .btn{width:auto;}
+
+    /* MODAL */
+    .modal-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:center;z-index:9999;}
+    .modal{background:#fff;padding:40px;border-radius:24px;width:90%;max-width:450px;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,0.2);max-height:80vh;overflow-y:auto;}
+    
+    /* NEW DASHBOARD CARDS */
+    .stat-card{flex:1;min-width:220px;background:#f8fafc;padding:25px;border-radius:20px;border:1px solid #e2e8f0;}
+    .stat-title{font-size:13px;font-weight:800;color:#64748b;text-transform:uppercase;letter-spacing:1px;}
+    .stat-value{font-size:36px;font-weight:900;color:#334155;margin-top:5px;}
+    
+    /* NEW BID MODAL STYLES */
+    .bid-modal-layout{display:flex;gap:25px;text-align:left;max-width:650px;}
+    .bid-list-col{flex:1.5;min-width:250px;border-right:1px solid #e2e8f0;padding-right:25px;max-height:400px;overflow-y:auto;}
+    .bid-actions-col{flex:1;min-width:200px;padding-left:15px;}
+    .bid-item{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #eee;}
+    .bid-item:last-child{border-bottom:none;}
+    .bid-item-details{font-size:14px;color:#333;display:flex;flex-direction:column;gap:2px;}
+    .bid-item-price{font-weight:800;font-size:16px;color:var(--green);text-align:right;}
+    .bid-item-time{font-size:10px;color:#999;font-weight:500;}
+    @media(max-width:700px){.bid-modal-layout{flex-direction:column;max-width:400px;}.bid-list-col{border-right:none;padding-right:0;margin-bottom:20px;border-bottom:1px solid #e2e8f0;padding-bottom:20px;}.bid-actions-col{padding-left:0;}}
+  </style>
+</head>
+<body>
+
+<div id="authScreen" class="center-screen">
+  <div class="card" style="width:100%;max-width:450px;padding:40px;">
+    <div style="text-align:center;margin-bottom:30px;">
+        <h1 style="color:var(--green);font-weight:900;font-size:32px;line-height:1;">Krishi Bazaar</h1>
+        <p style="color:var(--muted);margin-top:10px;font-size:16px;">Digital Farmer Marketplace</p>
+    </div>
+    <div id="authError" class="error-banner hidden"></div>
+    <div id="loginForm">
+       <label class="label" style="margin-top:0;">Email Address</label>
+       <input type="email" id="loginEmail" placeholder="farmer@example.com" />
+       <label class="label">Password</label>
+       <input type="password" id="loginPass" placeholder="••••••" />
+       <button id="loginBtn" class="btn" style="margin-top:25px;font-size:16px;">Sign In</button>
+       <div style="display:flex;align-items:center;margin:25px 0;color:#cbd5e1;">
+          <hr style="flex:1;"><span style="padding:0 15px;font-weight:600;font-size:13px;">OR</span><hr style="flex:1;">
+       </div>
+       <button id="googleBtn" class="btn secondary" style="color:#333;border-color:#e2e8f0;">
+         <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" style="width:18px;margin-right:10px;"> 
+         Sign in with Google
+       </button>
+       <button id="demoBtn" class="btn secondary" style="margin-top:12px;background:#f8fafc;border-color:#e2e8f0;color:#64748b;">Guest Demo Mode</button>
+       <p style="text-align:center;margin-top:30px;color:#64748b;">
+         New to Krishi Bazaar? <a id="gotoSignup" href="#" style="color:var(--green);font-weight:800;">Create Account</a>
+       </p>
+    </div>
+    <div id="signupForm" class="hidden">
+       <h2 style="font-size:24px;font-weight:800;margin-bottom:20px;color:#333;">Join the Community</h2>
+       <label class="label" style="margin-top:0;">I am a...</label>
+       <select id="signupRole" style="border:2px solid var(--green);font-weight:700;">
+          <option value="farmer">👨‍🌾 I am a Farmer (Seller)</option>
+          <option value="buyer">🛒 I am a Buyer</option>
+       </select>
+       <label class="label">Email</label>
+       <input type="email" id="signupEmail" placeholder="you@example.com" />
+       <label class="label">Password (Min 6 chars)</label>
+       <input type="password" id="signupPass" />
+       <button id="signUpSubmit" class="btn" style="margin-top:25px;">Create Account</button>
+       <p style="text-align:center;margin-top:30px;color:#64748b;">
+         Already have an account? <a id="gotoLogin" href="#" style="color:var(--green);font-weight:800;">Sign In</a>
+       </p>
+    </div>
+  </div>
+</div>
+
+<div id="appScreen" class="app-container hidden">
+  <header class="app-header">
+      <div style="font-weight:900;font-size:24px;letter-spacing:-1px;">KB.</div>
+      <div style="display:flex;gap:15px;align-items:center;">
+          <span id="userRoleBadge" style="background:rgba(0,0,0,0.2);padding:6px 15px;border-radius:30px;font-size:13px;font-weight:700;letter-spacing:1px;">LOADING...</span>
+          <button id="logoutBtn" style="background:#fff;color:var(--green);border:none;padding:8px 16px;border-radius:10px;font-weight:800;font-size:13px;cursor:pointer;">LOGOUT</button>
+      </div>
+  </header>
+
+  <nav class="tabs">
+      <button data-tab="dashboard" class="active">Dashboard</button>
+      <button data-tab="activity" id="navActivityBtn">Activity Log</button>
+      <button data-tab="marketplace">Marketplace</button>
+  </nav>
+
+  <main class="content">
+      <section id="dashboard" class="tab-content">
+          <div class="card">
+              <h2 style="font-size:22px;font-weight:800;color:var(--green);margin-top:0;">My Dashboard</h2>
+              <div style="display:flex;gap:20px;margin-top:25px;flex-wrap:wrap;">
+                  
+                  <div class="stat-card" style="background:var(--light);">
+                      <div class="stat-title">Projected Revenue</div>
+                      <div class="stat-value">₹55,000</div>
+                  </div>
+                  
+                  <div id="farmerStat-listings" class="stat-card hidden">
+                      <div class="stat-title">My Active Listings</div>
+                      <div id="listingsCount" class="stat-value">0</div>
+                  </div>
+                  
+                  <div id="farmerStat-bids" class="stat-card hidden">
+                      <div class="stat-title">Bids Received</div>
+                      <div id="bidsCount" class="stat-value">0</div>
+                  </div>
+                  
+                  <div id="buyerStat-bids" class="stat-card hidden" style="background:var(--light);">
+                      <div class="stat-title">My Active Bids</div>
+                      <div id="myBidsCount" class="stat-value">0</div>
+                  </div>
+
+              </div>
+          </div>
+          <h3 style="font-size:20px;font-weight:800;margin:40px 0 20px;color:#334155;">Market Intelligence Feed</h3>
+          <div id="newsGrid" class="news-grid">
+              <div style="text-align:center;padding:40px;color:#999;grid-column:1/-1;"><div class="loader"></div></div>
+          </div>
+      </section>
+
+      <section id="activity" class="tab-content hidden">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:25px;">
+              <h2 style="font-size:24px;font-weight:800;color:var(--green);margin:0;">Activity Log</h2>
+              <button id="ttsBtn" class="btn secondary" style="width:auto;padding:10px 20px;">✨ Read Aloud</button>
+          </div>
+          <div id="actError" class="error-banner hidden"></div>
+          <audio id="audioPlayer" controls style="width:100%;margin-bottom:20px;display:none;"></audio>
+          <div class="card" style="background:#f1f5f9;border:none;">
+              <h3 style="margin-top:0;font-weight:800;color:#475569;">LOG NEW RECORD</h3>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:15px;">
+                  <div><label class="label">Crop Name</label><input id="actCrop" placeholder="e.g. Tomatoes" style="background:#fff"></div>
+                  <div><label class="label">Activity Type</label><select id="actType" style="background:#fff;margin-top:8px;"><option>Irrigation</option><option>Fertilizer</option><option>Pesticide</option><option>Harvest</option><option>Sowing</option></select></div>
+                  <div><label class="label">Date</label><input type="date" id="actDate" style="background:#fff"></div>
+              </div>
+              <label class="label">Operational Notes</label>
+              <textarea id="actNotes" rows="2" style="background:#fff" placeholder="e.g. Applied 20kg Urea to Sector 4"></textarea>
+              <button id="saveActBtn" class="btn" style="margin-top:25px;width:auto;padding-left:40px;padding-right:40px;">Save Record</button>
+          </div>
+          <div id="actList" style="margin-top:30px;"><div class="loader"></div></div>
+      </section>
+
+      <section id="marketplace" class="tab-content hidden">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:25px;">
+              <h2 style="font-size:24px;font-weight:800;color:var(--green);margin:0;">Marketplace</h2>
+              <div id="mktError" class="error-banner hidden"></div>
+          </div>
+          <div id="marketSubNav" style="display:flex;background:#fff;padding:5px;border-radius:12px;box-shadow:var(--shadow);margin-bottom:30px;">
+              <button id="btnBuyerMode" class="btn active-tab" style="border-radius:10px;flex:1;">Browse Listings</button>
+              <button id="btnSellerMode" class="btn secondary" style="border-radius:10px;flex:1;border:none;">Seller Console</button>
+          </div>
+          <div id="buyerView">
+              <div style="display:flex;justify-content:flex-end;margin-bottom:20px;">
+                  <select id="marketSort" style="width:auto;margin:0;padding:10px 20px;font-size:14px;font-weight:600;">
+                      <option value="newest">Sort: Newest First</option>
+                      <option value="price_asc">Sort: Price Low to High</option>
+                  </select>
+              </div>
+              <div id="mktList"><div class="loader"></div></div>
+          </div>
+          <div id="sellerView" class="hidden">
+              <div class="card" style="border:2px dashed var(--green);background:#f0fdf4;">
+                  <h3 style="margin-top:0;color:var(--green);font-weight:800;font-size:20px;">＋ Create New Listing</h3>
+                  <div style="display:grid;grid-template-columns:2fr 1fr;gap:20px;">
+                      <div><label class="label">Product Name</label><input id="sellName" placeholder="e.g. Organic Tomatoes 500kg" style="background:#fff"></div>
+                      <div><label class="label">Price (₹)</label><input id="sellPrice" type="number" placeholder="0.00" style="background:#fff"></div>
+                  </div>
+                  <label class="label">Image URL (Optional)</label>
+                  <input id="sellImg" placeholder="https://..." style="background:#fff">
+                  <p style="font-size:13px;color:var(--green);margin-top:8px;">* Tip: Use the exact same 'Product Name' here as you used in your Activity Log 'Crop Name' so buyers can see its history.</p>
+                  <button id="postItemBtn" class="btn" style="margin-top:25px;">Post to Marketplace</button>
+              </div>
+              <h3 style="font-size:20px;font-weight:800;margin:40px 0 20px;color:#334155;">My Active Listings</h3>
+              <div id="myList"></div>
+          </div>
+      </section>
+  </main>
+</div>
+
+<div id="roleModal" class="modal-overlay hidden">
+    <div class="modal">
+        <h2 style="color:var(--green);font-weight:900;font-size:28px;margin-top:0;line-height:1;">Final Step!</h2>
+        <p style="color:var(--muted);margin:15px 0 30px;font-size:16px;line-height:1.5;">To provide the best experience, please tell us how you will primarily use Krishi Bazaar:</p>
+        <div style="text-align:left;margin-bottom:30px;">
+            <label class="label" style="margin-top:0;">Select Your Role</label>
+            <select id="googleRoleSelect" style="padding:16px;font-size:16px;border:2px solid var(--green);font-weight:700;width:100%;">
+                <option value="farmer">👨‍🌾 I am a Farmer (Seller)</option>
+                <option value="buyer">🛒 I am a Buyer</option>
+            </select>
+        </div>
+        <button id="saveRoleBtn" class="btn" style="font-size:16px;padding:16px;">Complete Registration &rarr;</button>
+    </div>
+</div>
+
+<div id="cropActivityModal" class="modal-overlay hidden">
+    <div class="modal" style="text-align:left;max-width:500px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+             <h3 style="font-size:22px;font-weight:800;color:var(--green);margin:0;">Crop History</h3>
+             <div onclick="document.getElementById('cropActivityModal').classList.add('hidden')" style="font-size:28px;color:#999;cursor:pointer;line-height:1;">&times;</div>
+        </div>
+        <div id="cropActivityLoader" class="hidden"><div class="loader"></div></div>
+        <div id="cropActivityList" style="max-height:400px;overflow-y:auto;"></div>
+    </div>
+</div>
+
+<div id="editActivityModal" class="modal-overlay hidden">
+    <div class="modal" style="text-align:left;max-width:500px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+             <h3 style="font-size:22px;font-weight:800;color:var(--green);margin:0;">Edit Activity</h3>
+             <div onclick="document.getElementById('editActivityModal').classList.add('hidden')" style="font-size:28px;color:#999;cursor:pointer;line-height:1;">&times;</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:15px;">
+            <div><label class="label">Crop</label><input id="editActCrop" style="font-weight:700;"></div>
+            <div><label class="label">Type</label><select id="editActType" style="margin-top:8px;"><option>Irrigation</option><option>Fertilizer</option><option>Pesticide</option><option>Harvest</option><option>Sowing</option></select></div>
+        </div>
+        <label class="label">Date</label><input type="date" id="editActDate">
+        <label class="label">Notes</label><textarea id="editActNotes" rows="3"></textarea>
+        <button id="updateActBtn" class="btn" style="margin-top:25px;">Update Activity Log</button>
+    </div>
+</div>
+
+<div id="bidModal" class="modal-overlay hidden">
+    <div class="modal" style="max-width:700px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+             <h3 style="font-size:22px;font-weight:800;color:var(--green);margin:0;text-align:left;">Bidding Hub</h3>
+             <div id="closeBidModal" style="font-size:28px;color:#999;cursor:pointer;line-height:1;">&times;</div>
+        </div>
+        
+        <div class="bid-modal-layout">
+            <div class="bid-list-col">
+                <h4 style="font-weight:800;font-size:18px;color:#333;margin-top:0;margin-bottom:15px;">Latest Bids</h4>
+                <div id="bidListLoader"><div class="loader"></div></div>
+                <div id="latestBidsList"></div>
+            </div>
+            
+            <div class="bid-actions-col">
+                <div class="stat-card" style="width:100%;min-width:0;background:var(--light);padding:20px;">
+                    <div class="stat-title">Top Price</div>
+                    <div id="topBidPrice" class="stat-value" style="font-size:32px;">₹0</div>
+                </div>
+                
+                <h4 style="font-weight:800;font-size:18px;color:#333;margin-top:20px;margin-bottom:15px;">Place Your Bid</h4>
+                <label class="label" style="margin-top:0;">Your Offer (₹)</label>
+                <input type="number" id="bidAmount" placeholder="> ₹0" style="font-weight:700;font-size:18px;">
+                
+                <div style="display:flex;gap:10px;margin-top:15px;">
+                    <button id="bidPlus10" class="btn secondary small" style="flex:1;">+10</button>
+                    <button id="bidPlus20" class="btn secondary small" style="flex:1;">+20</button>
+                    <button id="bidPlus50" class="btn secondary small" style="flex:1;">+50</button>
+                </div>
+                
+                <button id="submitBidBtn" class="btn" style="margin-top:20px;">Post Bid</button>
+                <p id="bidError" class="error-banner hidden" style="margin-top:15px;"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="reviewBidsModal" class="modal-overlay hidden">
+    <div class="modal" style="text-align:left;max-width:500px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+             <h3 style="font-size:22px;font-weight:800;color:var(--green);margin:0;">Review Bids</h3>
+             <div onclick="document.getElementById('reviewBidsModal').classList.add('hidden')" style="font-size:28px;color:#999;cursor:pointer;line-height:1;">&times;</div>
+        </div>
+        <div id="bidsLoader" class="hidden"><div class="loader"></div></div>
+        <div id="bidsList" style="max-height:400px;overflow-y:auto;"></div>
+    </div>
+</div>
+
+<div id="editPriceModal" class="modal-overlay hidden">
+    <div class="modal" style="text-align:left;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+             <h3 style="font-size:22px;font-weight:800;color:var(--green);margin:0;">Edit Price</h3>
+             <div id="closeEditModal" style="font-size:28px;color:#999;cursor:pointer;line-height:1;">&times;</div>
+        </div>
+        <div id="editDetails" style="margin-bottom:20px;padding:15px;background:#f8fafc;border-radius:12px;"></div>
+        <label class="label">New Price (₹)</label>
+        <input type="number" id="newPriceAmount" placeholder="0.00" style="font-weight:700;font-size:18px;">
+        <button id="submitPriceBtn" class="btn" style="margin-top:25px;">Update Price</button>
+    </div>
+</div>
+
+<div id="msgModal" class="modal-overlay hidden">
+    <div class="modal" style="max-width:380px;padding:30px;">
+        <h3 id="msgTitle" style="margin-top:0;font-weight:800;font-size:20px;">Alert</h3>
+        <p id="msgBody" style="color:#64748b;margin:15px 0 25px;line-height:1.5;"></p>
+        <button onclick="document.getElementById('msgModal').classList.add('hidden')" class="btn secondary" style="width:auto;padding:10px 40px;">Okay</button>
+    </div>
+</div>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword, signInAnonymously, GoogleAuthProvider, signInWithPopup, signOut, sendEmailVerification } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+import { getFirestore, doc, getDoc, setDoc, updateDoc, addDoc, collection, collectionGroup, query, where, orderBy, onSnapshot, getDocs, serverTimestamp, deleteDoc, limit } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+// --- 1. CONFIGURATION ---
+// --- USES ORIGINAL 'krishi-baazar' KEYS ---
+const API_KEY = "AIzaSyARLDKBu7rAdl2_uwntdPWoyLSzULuuxOE"; 
+const APP_ID = "krishi-baazar";
+const firebaseConfig = { 
+    apiKey: API_KEY, 
+    authDomain: "krishi-baazar.firebaseapp.com", 
+    projectId: APP_ID, 
+    storageBucket: "krishi-baazar.appspot.com", 
+    messagingSenderId: "680511793989", 
+    appId: "1:680511793989:web:a50a99d153d4cffb552c2c" 
+};
+
+// --- 2. INITIALIZATION ---
+let app, auth, db, currentUser = null, currentRole = null;
+const state = { activities: [], listings: [], myBids: [] };
+let currentListingId = null;
+let currentEditingActivityId = null;
+let currentHighestBid = 0; // Tracks the highest bid for validation
+let unsubItemBids = null; // Live listener for the Bid Modal
+
+try {
+    app = initializeApp(firebaseConfig);
+    db = getFirestore(app);
+    auth = getAuth(app);
+} catch (e) { showMsg("Critical Error", "Firebase failed to load. Check console."); }
+
+// --- 3. AUTHENTICATION STATE OBSERVER ---
+onAuthStateChanged(auth, async (user) => {
+    document.querySelectorAll('.error-banner').forEach(el => el.classList.add('hidden'));
+    if (user) {
+        currentUser = user;
+        if (user.isAnonymous) {
+             currentRole = 'guest';
+             launchApp();
+        } else {
+             try {
+                 const userDoc = await getDoc(doc(db, "users", user.uid));
+                 if (userDoc.exists()) {
+                     currentRole = userDoc.data().role;
+                     launchApp();
+                 } else {
+                     document.getElementById('roleModal').classList.remove('hidden');
+                 }
+             } catch (e) {
+                 currentRole = 'guest'; launchApp();
+                 showInlineError('marketError', "Warning: Could not completely load profile.");
+             }
+        }
+    } else {
+        currentUser = null; currentRole = null;
+        document.getElementById('appScreen').classList.add('hidden');
+        document.getElementById('authScreen').classList.remove('hidden');
+    }
+});
+
+function launchApp() {
+    document.getElementById('authScreen').classList.add('hidden');
+    document.getElementById('appScreen').classList.remove('hidden');
+    document.getElementById('roleModal').classList.add('hidden');
+    document.getElementById('userRoleBadge').textContent = `${currentRole.toUpperCase()} | ${(currentUser.displayName || currentUser.email || 'Anon').substring(0,10)}`;
+
+    if (currentRole === 'buyer') {
+        document.getElementById('navActivityBtn').classList.add('hidden');
+        document.getElementById('btnSellerMode').classList.add('hidden');
+        document.getElementById('btnBuyerMode').classList.remove('hidden');
+    } else if (currentRole === 'farmer') {
+        document.getElementById('navActivityBtn').classList.remove('hidden');
+        document.getElementById('btnBuyerMode').classList.add('hidden');
+        document.getElementById('btnSellerMode').classList.remove('hidden');
+    } else { // Guest
+        document.getElementById('navActivityBtn').classList.add('hidden');
+        document.getElementById('btnSellerMode').classList.remove('hidden');
+        document.getElementById('btnBuyerMode').classList.remove('hidden');
+    }
+    subscribeToData();
+    loadAiNews();
+    renderDashboard();
+}
+
+// --- 4. REAL-TIME DATABASE LISTENERS ---
+let unsubActivities, unsubMarket, unsubMyBids;
+function subscribeToData() {
+    if (unsubActivities) unsubActivities();
+    if (unsubMarket) unsubMarket();
+    if (unsubMyBids) unsubMyBids();
+
+    unsubMarket = onSnapshot(query(collection(db, `artifacts/${APP_ID}/public/data/listings`), orderBy('createdAt', 'desc')), 
+        (snap) => {
+            state.listings = snap.docs.map(d => ({id: d.id, ...d.data()}));
+            renderMarketplace();
+            renderDashboard();
+        }, (error) => { showInlineError('mktError', "Marketplace offline."); });
+
+    if (currentRole === 'farmer') {
+        unsubActivities = onSnapshot(query(collection(db, `artifacts/${APP_ID}/users/${currentUser.uid}/activities`), orderBy('createdAt', 'desc')), 
+            (snap) => {
+                state.activities = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+                renderActivities();
+            }, (error) => { showInlineError('actError', "Could not load activities."); });
+    }
+    
+    if (currentRole === 'buyer') {
+        unsubMyBids = onSnapshot(query(collectionGroup(db, 'bids'), where('buyerId', '==', currentUser.uid)), (snap) => {
+            state.myBids = snap.docs.map(d => d.data());
+            renderDashboard();
+        }, (error) => {
+            console.error("Error fetching my bids:", error);
+            showInlineError('mktError', "Could not load your bid history. Index may be required.");
+        });
+    }
+}
+
+// --- 5. RENDERING FUNCTIONS ---
+function renderMarketplace() {
+    const buyerList = document.getElementById('mktList');
+    const sellerList = document.getElementById('myList');
+    
+    if (currentRole !== 'farmer') {
+        buyerList.innerHTML = state.listings.length ? '' : '<div style="text-align:center;padding:40px;color:#999;">No items currently for sale.</div>';
+        state.listings.forEach(item => {
+            buyerList.innerHTML += `
+                <div class="listing">
+                    <img src="${item.img || 'https://placehold.co/100?text=Crop'}" onerror="this.src='https://placehold.co/100?text=Crop'">
+                    <div style="flex:1;">
+                        <div style="font-weight:700;font-size:18px;color:var(--green);">${item.name}</div>
+                        <div class="price">₹${item.price} <span style="font-size:14px;color:#666;font-weight:400;">/ quintal</span></div>
+                        <div style="font-size:13px;color:#999;margin-top:8px;">Seller ID: ${item.sellerId.substring(0,8)}...</div>
+                    </div>
+                    <div class="buyer-actions">
+                        <button class="btn small secondary compare-btn">✨ Compare Listing</button>
+                        <button class="btn small bid-btn" data-id="${item.id}">Bid</button>
+                        <button class="btn small secondary view-activity-btn" data-seller="${item.sellerId}" data-crop="${item.name}">View crop activity</button>
+                        <button class="btn small secondary engage-btn" data-id="${item.sellerId}">Engage Seller</button>
+                    </div>
+                </div>`;
+        });
+        document.querySelectorAll('.bid-btn').forEach(btn => {
+            btn.onclick = (e) => {
+                const item = state.listings.find(i => i.id === e.target.dataset.id);
+                currentListingId = item.id;
+                document.getElementById('bidAmount').value = '';
+                document.getElementById('bidError').classList.add('hidden');
+                document.getElementById('bidModal').classList.remove('hidden');
+                openBidModalAndLoadHistory(item.id, item.price);
+            }
+        });
+        document.querySelectorAll('.view-activity-btn').forEach(btn => {
+            btn.onclick = () => loadBuyerActivity(btn.dataset.seller, btn.dataset.crop);
+        });
+        document.querySelectorAll('.compare-btn').forEach(b => b.onclick = () => showMsg("Compare", "Added to comparison (Simulated)"));
+        document.querySelectorAll('.engage-btn').forEach(b => b.onclick = () => showMsg("Engage", "Chat started (Simulated)"));
+    }
+
+    const myListings = state.listings.filter(item => item.sellerId === currentUser.uid);
+    sellerList.innerHTML = myListings.length ? '' : '<div style="text-align:center;padding:30px;color:#999;border:2px dashed #eee;border-radius:12px;">You have no active listings.</div>';
+    myListings.forEach(item => {
+        const el = document.createElement('div');
+        el.className = 'listing'; el.style.background = '#fff5f5';
+        el.innerHTML = `
+            <div style="flex:1;display:flex;align-items:center;gap:15px;">
+                <img src="${item.img || 'https://placehold.co/100?text=Crop'}" style="width:60px;height:60px;">
+                <div><div style="font-weight:700;">${item.name}</div><div class="price-display" style="font-weight:600;color:#333;">₹${item.price}</div></div>
+            </div>
+            <div class="seller-actions">
+                <button class="btn small orange review-bids-btn">Review Bids</button>
+                <button class="btn small green-outline edit-price-btn">Edit Price</button>
+                <button class="btn small withdraw-btn" style="background:var(--green);border-color:var(--green);color:#fff;">Withdraw</button>
+                <button class="btn small red del-post-btn">Delete Post</button>
+            </div>`;
+        el.querySelector('.withdraw-btn').onclick = () => handleWithdrawal(item.id);
+        el.querySelector('.del-post-btn').onclick = () => handleDeletePost(item.id);
+        el.querySelector('.review-bids-btn').onclick = () => openReviewBidsModal(item.id);
+        el.querySelector('.edit-price-btn').onclick = () => openEditPriceModal(item.id);
+        sellerList.appendChild(el);
+    });
+}
+
+function renderActivities() { /* Unchanged */ }
+function renderDashboard() {
+    document.querySelectorAll('.stat-card').forEach(el => el.classList.add('hidden'));
+
+    if (currentRole === 'farmer') {
+        const myListings = state.listings.filter(item => item.sellerId === currentUser.uid);
+        document.getElementById('farmerStat-listings').classList.remove('hidden');
+        document.getElementById('farmerStat-bids').classList.remove('hidden');
+        
+        document.getElementById('listingsCount').textContent = myListings.length;
+        
+        let totalBids = 0;
+        const bidPromises = myListings.map(listing => {
+            return getDocs(collection(db, `artifacts/${APP_ID}/public/data/listings/${listing.id}/bids`));
+        });
+        
+        Promise.all(bidPromises).then(results => {
+            results.forEach(snap => {
+                totalBids += snap.size;
+            });
+            document.getElementById('bidsCount').textContent = totalBids;
+        });
+        
+    } else if (currentRole === 'buyer') {
+        document.getElementById('buyerStat-bids').classList.remove('hidden');
+        document.getElementById('myBidsCount').textContent = state.myBids.length;
+    } else {
+        document.querySelector('.stat-card').classList.remove('hidden');
+    }
+}
+
+
+// --- 6. ACTIONS ---
+async function handleSaveActivity() { /* Unchanged */ }
+async function deleteActivity(docId) { /* Unchanged */ }
+function openEditActivityModal(id) { /* Unchanged */ }
+async function handleUpdateActivity() { /* Unchanged */ }
+async function handlePostListing() { /* Unchanged */ }
+async function loadBuyerActivity(sellerId, cropName) { /* Unchanged */ }
+async function handleWithdrawal(listingId) { /* Unchanged */ }
+async function handleDeletePost(docId) { /* Unchanged */ }
+function openEditPriceModal(listingId) { /* Unchanged */ }
+async function handleEditPrice() { /* Unchanged */ }
+
+// --- *** MODIFIED BIDDING FUNCTIONS *** ---
+async function handleSubmitBid() {
+    const bidAmount = parseFloat(document.getElementById('bidAmount').value);
+    
+    if (!bidAmount || isNaN(bidAmount) || bidAmount <= 0) {
+        return showInlineError('bidError', "Please enter a valid bid amount.");
+    }
+    
+    if (bidAmount <= currentHighestBid) {
+        return showInlineError('bidError', `Your bid must be higher than the current top bid of ₹${currentHighestBid}`);
+    }
+    
+    if (!currentListingId) {
+        return showInlineError('bidError', "Listing ID not found. Please try again.");
+    }
+
+    try {
+        await addDoc(collection(db, `artifacts/${APP_ID}/public/data/listings/${currentListingId}/bids`), {
+            bidAmount: bidAmount,
+            buyerEmail: currentUser.email || 'Anonymous',
+            buyerId: currentUser.uid,
+            createdAt: serverTimestamp()
+        });
+        document.getElementById('bidModal').classList.add('hidden');
+        showMsg("Bid Placed", "Your bid has been successfully placed!");
+    } catch (e) {
+        showInlineError('bidError', "Error placing bid.");
+    }
+}
+
+// Helper function to format timestamp
+function formatTimestamp(timestamp) {
+    if (!timestamp) return 'Just now';
+    const date = timestamp.toDate();
+    return date.toLocaleString('en-IN', { 
+        hour: '2-digit', 
+        minute: '2-digit', 
+        second: '2-digit',
+        day: '2-digit', 
+        month: '2-digit' 
+    });
+}
+
+// NEW: This function opens the modal and sets up a LIVE listener for bids
+function openBidModalAndLoadHistory(listingId, startPrice) {
+    // Reset inputs and error messages
+    document.getElementById('bidAmount').value = '';
+    document.getElementById('bidError').classList.add('hidden');
+    
+    // Show loader
+    const loader = document.getElementById('bidListLoader');
+    loader.classList.remove('hidden');
+    document.getElementById('latestBidsList').innerHTML = '';
+    document.getElementById('topBidPrice').textContent = '...';
+
+    // If we already have a listener, stop it
+    if (unsubItemBids) unsubItemBids();
+
+    // Listen for real-time bid updates
+    const q = query(collection(db, `artifacts/${APP_ID}/public/data/listings/${listingId}/bids`), orderBy('bidAmount', 'desc'));
+    unsubItemBids = onSnapshot(q, (snap) => {
+        const item = state.listings.find(i => i.id === listingId);
+        const bids = snap.docs.map(d => ({...d.data(), id: d.id}));
+        renderBidModalUI(bids, item.price);
+    }, (error) => {
+        console.error("Error listening to bids:", error);
+        loader.classList.add('hidden');
+        document.getElementById('latestBidsList').innerHTML = '<p style="color:red;">Could not load bids.</p>';
+    });
+}
+
+// NEW: This function renders the UI *inside* the bid modal
+function renderBidModalUI(bids, startPrice) {
+    document.getElementById('bidListLoader').classList.add('hidden');
+    const listEl = document.getElementById('latestBidsList');
+    const topPriceEl = document.getElementById('topBidPrice');
+    const bidInput = document.getElementById('bidAmount');
+
+    // Find the highest bid
+    let maxBid = parseFloat(startPrice);
+    if (bids.length > 0) {
+        maxBid = Math.max(maxBid, ...bids.map(b => b.bidAmount));
+    }
+    currentHighestBid = maxBid;
+    
+    // Update Top Price and Input Placeholder
+    topPriceEl.textContent = `₹${currentHighestBid}`;
+    bidInput.placeholder = `> ₹${currentHighestBid}`;
+
+    // Render Bid List
+    if (bids.length === 0) {
+        listEl.innerHTML = `<p style="text-align:center;color:var(--muted);padding:20px 0;">No bids yet. Be the first!</p>`;
+    } else {
+        listEl.innerHTML = bids.map(bid => `
+            <div class="bid-item">
+                <div class="bid-item-details">
+                    <strong>${bid.buyerEmail.split('@')[0]}</strong>
+                    <div class="bid-item-time">${formatTimestamp(bid.createdAt)}</div>
+                </div>
+                <div class="bid-item-price">₹${bid.bidAmount}</div>
+            </div>
+        `).join('');
+    }
+}
+
+async function openReviewBidsModal(listingId) { /* Unchanged */ }
+function renderBids(bids, listingId) { /* Unchanged */ }
+// --- END NEW BIDDING FUNCTIONS ---
+
+
+// --- 7. AI ---
+async function loadAiNews() { /* Unchanged */ }
+async function speakActivitySummary() { /* Unchanged */ }
+
+// --- 8. EVENT BINDINGS ---
+document.getElementById('loginBtn').onclick = async () => { try { await signInWithEmailAndPassword(auth, document.getElementById('loginEmail').value, document.getElementById('loginPass').value); } catch (e) { showInlineError('authError', e.message); } };
+document.getElementById('signUpSubmit').onclick = async () => { try { const cred = await createUserWithEmailAndPassword(auth, document.getElementById('signupEmail').value, document.getElementById('signupPass').value); await setDoc(doc(db, "users", cred.user.uid), { role: document.getElementById('signupRole').value, email: cred.user.email, createdAt: serverTimestamp() }); await sendEmailVerification(cred.user); alert("Verify email!"); signOut(auth); } catch (e) { showInlineError('authError', e.message); } };
+document.getElementById('googleBtn').onclick = async () => { try { await signInWithPopup(auth, new GoogleAuthProvider()); } catch (e) { showInlineError('authError', e.message); } };
+document.getElementById('demoBtn').onclick = async () => { try { await signInAnonymously(auth); } catch (e) { showInlineError('authError', "Enable 'Anonymous' in Firebase."); } };
+document.getElementById('saveRoleBtn').onclick = async () => { if (currentUser) { await setDoc(doc(db, "users", currentUser.uid), { role: document.getElementById('googleRoleSelect').value, email: currentUser.email, createdAt: serverTimestamp() }); window.location.reload(); } };
+document.getElementById('logoutBtn').onclick = () => signOut(auth);
+document.getElementById('saveActBtn').onclick = handleSaveActivity;
+document.getElementById('postItemBtn').onclick = handlePostListing;
+document.getElementById('ttsBtn').onclick = speakActivitySummary;
+document.getElementById('submitBidBtn').onclick = handleSubmitBid;
+document.getElementById('submitPriceBtn').onclick = handleEditPrice;
+document.getElementById('closeEditModal').onclick = () => document.getElementById('editPriceModal').classList.add('hidden');
+document.getElementById('closeBidModal').onclick = () => { 
+    document.getElementById('bidModal').classList.add('hidden');
+    if (unsubItemBids) unsubItemBids(); // Stop listening when modal closes
+};
+document.getElementById('gotoSignup').onclick = () => { document.getElementById('loginForm').classList.add('hidden'); document.getElementById('signupForm').classList.remove('hidden'); };
+document.getElementById('gotoLogin').onclick = () => { document.getElementById('signupForm').classList.add('hidden'); document.getElementById('loginForm').classList.remove('hidden'); };
+document.getElementById('updateActBtn').onclick = handleUpdateActivity;
+
+// --- Bind quick bid buttons ---
+document.getElementById('bidPlus10').onclick = () => {
+    const input = document.getElementById('bidAmount');
+    input.value = currentHighestBid + 10;
+};
+document.getElementById('bidPlus20').onclick = () => {
+    const input = document.getElementById('bidAmount');
+    input.value = currentHighestBid + 20;
+};
+document.getElementById('bidPlus50').onclick = () => {
+    const input = document.getElementById('bidAmount');
+    input.value = currentHighestBid + 50;
+};
+
+document.querySelectorAll('.tabs button').forEach(btn => {
+    btn.onclick = () => {
+        if (btn.dataset.tab === 'marketplace') {
+            if (currentRole === 'farmer') {
+                document.getElementById('marketSubNav').classList.add('hidden');
+                document.getElementById('buyerView').classList.add('hidden');
+                document.getElementById('sellerView').classList.remove('hidden');
+            } else {
+                document.getElementById('marketSubNav').classList.remove('hidden');
+                document.getElementById('btnBuyerMode').click();
+            }
+        }
+        document.querySelectorAll('.tabs button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        document.querySelectorAll('.tab-content').forEach(s => s.classList.add('hidden'));
+        document.getElementById(btn.dataset.tab).classList.remove('hidden');
+    }
+});
+document.getElementById('btnBuyerMode').onclick = (e) => {
+    if (currentRole === 'farmer') return; 
+    document.getElementById('buyerView').classList.remove('hidden');
+    document.getElementById('sellerView').classList.add('hidden');
+    e.target.classList.add('active-tab'); e.target.classList.remove('secondary');
+    document.getElementById('btnSellerMode').classList.remove('active-tab'); document.getElementById('btnSellerMode').classList.add('secondary');
+};
+document.getElementById('btnSellerMode').onclick = (e) => {
+    document.getElementById('buyerView').classList.add('hidden');
+    document.getElementById('sellerView').classList.remove('hidden');
+    e.target.classList.add('active-tab'); e.target.classList.remove('secondary');
+    document.getElementById('btnBuyerMode').classList.remove('active-tab'); document.getElementById('btnBuyerMode').classList.add('secondary');
+};
+
+function showMsg(t, b) { document.getElementById('msgTitle').textContent = t; document.getElementById('msgBody').textContent = b; document.getElementById('msgModal').classList.remove('hidden'); }
+function showInlineError(id, msg) { const el = document.getElementById(id); el.textContent = msg; el.classList.remove('hidden'); setTimeout(() => el.classList.add('hidden'), 5000); }
+</script>
+</body>
+</html>

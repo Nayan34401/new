@@ -1,0 +1,16 @@
+﻿{
+  "hosting": {
+    "public": "client/dist",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      { "source": "/api/**", "function": "api" },
+      { "source": "**", "destination": "/index.html" }
+    ],
+    "predeploy": ["npm run build"]
+  },
+  "functions": {
+    "source": "functions",
+    "runtime": "node18",
+    "predeploy": ["npm --prefix functions run build"]
+  }
+}
